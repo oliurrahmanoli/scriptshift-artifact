@@ -5,6 +5,13 @@ authors:
   - family-names: Rahman
     given-names: Oliur
     email: oliurrah.n@gmail.com
+    affiliation: "Independent researcher, Sydney, Australia"
+  - family-names: Zahidy
+    given-names: Nuha Fadilah
+    affiliation: "Charles Darwin University, Australia"
+  - family-names: Rahman
+    given-names: Zabedur
+    affiliation: "Crown Institute of Higher Education, Australia"
 repository-code: "https://github.com/oliurrahmanoli/scriptshift-artifact"
 license: MIT
 date-released: 2026-10-14
