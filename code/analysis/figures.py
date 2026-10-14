@@ -54,7 +54,7 @@ def f1_heatmap(grid: pd.DataFrame, path_stem: str, conditions=None, title="F1 â€
     for i in range(len(models)):
         for j in range(len(conditions)):
             txt = "n/a" if np.isnan(M[i, j]) else f"{M[i, j]:.1f}{'â€ ' if SG[i, j] else ''}\n(n={int(N[i, j])})"
-            ax.text(j, i, txt, ha="center", va="center", fontsize=7,
+            ax.text(j, i, txt, ha="center", va="center", fontsize=8.5,
                     color="white" if (not np.isnan(M[i, j]) and M[i, j] < np.nanmax(M) * 0.6) else "black")
     metric = grid["metric"].iloc[0] if "metric" in grid else ""
     fig.colorbar(im, ax=ax, label=f"targeted ASR (%) [{metric}]")
