@@ -32,7 +32,7 @@ def _save(fig, path_stem):
     return out
 
 
-def f1_heatmap(grid: pd.DataFrame, path_stem: str, conditions=None):
+def f1_heatmap(grid: pd.DataFrame, path_stem: str, conditions=None, title="F1 — targeted ASR by model and language form"):
     """grid = tables.asr_grid output."""
     if grid.empty or "asr" not in grid:
         return []
@@ -49,17 +49,17 @@ def f1_heatmap(grid: pd.DataFrame, path_stem: str, conditions=None):
             SG[models.index(r["model"]), conditions.index(c)] = bool(r.get("self_generated", False))
     fig, ax = plt.subplots(figsize=(1.3 * len(conditions) + 2.5, 0.6 * len(models) + 1.8))
     im = ax.imshow(np.ma.masked_invalid(M), cmap="viridis", vmin=0, vmax=max(10, np.nanmax(M) if np.isfinite(M).any() else 10), aspect="auto")
-    ax.set_xticks(range(len(conditions)), conditions, rotation=30, ha="right")
+    ax.set_xticks(range(len(conditions)), conditions, rotation=0, ha="center", fontsize=9)
     ax.set_yticks(range(len(models)), models)
     for i in range(len(models)):
         for j in range(len(conditions)):
-            txt = "n/a" if np.isnan(M[i, j]) else f"{M[i, j]:.1f}{'*' if SG[i, j] else ''}\n(n={int(N[i, j])})"
+            txt = "n/a" if np.isnan(M[i, j]) else f"{M[i, j]:.1f}{'†' if SG[i, j] else ''}\n(n={int(N[i, j])})"
             ax.text(j, i, txt, ha="center", va="center", fontsize=7,
                     color="white" if (not np.isnan(M[i, j]) and M[i, j] < np.nanmax(M) * 0.6) else "black")
     metric = grid["metric"].iloc[0] if "metric" in grid else ""
     fig.colorbar(im, ax=ax, label=f"targeted ASR (%) [{metric}]")
-    ax.set_title("F1 — targeted ASR by model and language form"
-                 + ("\n* = payload written by the same model (self-generated)" if SG.any() else ""), fontsize=10)
+    ax.set_title(title
+                 + ("\n† = payload written by the same model (self-generated)" if SG.any() else ""), fontsize=10)
     _watermark(fig, bool(grid.get("synthetic", pd.Series([False])).any()))
     return _save(fig, path_stem)
 
@@ -71,7 +71,7 @@ def f2_forest(t3: pd.DataFrame, path_stem: str):
     t = t3[t3["diff_pp"].notna()].copy() if "diff_pp" in t3 else t3.copy()
     if t.empty:
         return []
-    t["model"] = t["model"].astype(str) + np.where(t.get("self_generated", pd.Series(False, index=t.index)).fillna(False).astype(bool), " (self-gen)", "")
+    t["model"] = t["model"].astype(str) + np.where(t.get("self_generated", pd.Series(False, index=t.index)).fillna(False).astype(bool), " †", "")
     t["label"] = t["contrast"] + "  " + t["cond_b"] + " − " + t["cond_a"] + "  [" + t["model"] + "]"
     t = t.sort_values(["contrast", "level", "model"], ascending=[True, False, True]).reset_index(drop=True)
     fig, ax = plt.subplots(figsize=(8, 0.32 * len(t) + 1.5))

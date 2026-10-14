@@ -1,0 +1,7 @@
+arm,condition,spearman_rho,perm_p_two_sided,n_models,note
+stock,bn_mt,-0.6,0.35,5,exact permutation over 120 orderings; Gemma bn_llm/banglish cells self-generated
+stock,bn_llm,-0.9746794344808964,0.03333333333333333,5,exact permutation over 120 orderings; Gemma bn_llm/banglish cells self-generated
+stock,banglish_llm,-0.7,0.23333333333333334,5,exact permutation over 120 orderings; Gemma bn_llm/banglish cells self-generated
+unicode,bn_mt,-0.6668859288553501,0.26666666666666666,5,exact permutation over 120 orderings; Gemma bn_llm/banglish cells self-generated
+unicode,bn_llm,-0.20519567041703082,0.7666666666666667,5,exact permutation over 120 orderings; Gemma bn_llm/banglish cells self-generated
+unicode,banglish_llm,-0.7,0.23333333333333334,5,exact permutation over 120 orderings; Gemma bn_llm/banglish cells self-generated
