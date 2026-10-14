@@ -1,6 +1,6 @@
 # Script Shift — artifact
 
-Code and data accompanying the paper **"Script Shift: LLM-Written Bangla and Banglish Indirect Prompt Injection Against Tool-Using LLM Agents"** by Oliur Rahman, Nuha Fadilah Zahidy and Zabedur Rahman (arXiv: TBD). The study covers
+Code and data accompanying the paper **"Script Shift: LLM-Written Bangla and Banglish Indirect Prompt Injection Against Tool-Using LLM Agents"** by Oliur Rahman Oli, Nuha Fadilah Zahidy and Zabedur Rahman (arXiv: TBD). The study covers
 indirect prompt injection written in **Bangla, Banglish (romanised Bangla) and code-mixed Bangla–English**
 against tool-using LLM agents on **AgentDojo** (package 0.1.35, benchmark suites v1.2.2, no defence).
 
@@ -124,8 +124,8 @@ Weights are not redistributed; download them from their official sources under t
 If you use this artifact, please cite the paper (arXiv link TBD; see `CITATION.cff`):
 
 ```bibtex
-@misc{rahman2026scriptshift,
-  author = {Oliur Rahman and Nuha Fadilah Zahidy and Zabedur Rahman},
+@misc{oli2026scriptshift,
+  author = {Oli, Oliur Rahman and Nuha Fadilah Zahidy and Zabedur Rahman},
   title  = {Script Shift: LLM-Written Bangla and Banglish Indirect Prompt Injection Against Tool-Using LLM Agents},
   year   = {2026},
   note   = {arXiv preprint (link TBD)},
