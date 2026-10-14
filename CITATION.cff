@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+message: "If you use this artifact, please cite the accompanying paper."
+title: "Script Shift: LLM-Written Bangla and Banglish Indirect Prompt Injection Against Tool-Using LLM Agents"
+authors:
+  - family-names: Rahman
+    given-names: Oliur
+    email: oliurrah.n@gmail.com
+repository-code: "https://github.com/oliurrahmanoli/scriptshift-artifact"
+license: MIT
+date-released: 2026-10-14

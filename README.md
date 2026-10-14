@@ -1,6 +1,6 @@
 # Script Shift — artifact
 
-"Code and data accompanying the paper Script Shift: LLM-Written Bangla and Banglish Indirect Prompt Injection Against Tool-Using LLM Agents by Oliur Rahman. (under double-blind review):
+Code and data accompanying the paper **"Script Shift: LLM-Written Bangla and Banglish Indirect Prompt Injection Against Tool-Using LLM Agents"** by Oliur Rahman (arXiv: TBD). The study covers
 indirect prompt injection written in **Bangla, Banglish (romanised Bangla) and code-mixed Bangla–English**
 against tool-using LLM agents on **AgentDojo** (package 0.1.35, benchmark suites v1.2.2, no defence).
 
@@ -110,7 +110,7 @@ Weights are not redistributed; download them from their official sources under t
   Ministral / Mistral (see Mistral AI's licence for the specific release), Gemma (Gemma Terms of Use),
   NLLB-200 (CC BY-NC 4.0). Model outputs in `results/` are provided for research reproducibility.
 
-## Not included (available on request after review)
+## Not included (available on request)
 * No individual raw file exceeded 50 MB, so no raw logs were dropped for size.
 * The embedded harness snapshots `results/*/<model>/code/` that Kaggle bundled with each output
   (identical to `code/` at the run commit; still listed in each `SHA256SUMS.txt`).
@@ -119,3 +119,16 @@ Weights are not redistributed; download them from their official sources under t
 * Paper text/LaTeX, drafts, planning notes and the internal decision log (referenced in comments as
   "D<n>" / "research-plan §n"); `data/drafts_for_native_review.json` (unused machine drafts).
 * Python virtual environments, caches and pre-freeze data backups.
+
+## Citation
+If you use this artifact, please cite the paper (arXiv link TBD; see `CITATION.cff`):
+
+```bibtex
+@misc{rahman2026scriptshift,
+  author = {Oliur Rahman},
+  title  = {Script Shift: LLM-Written Bangla and Banglish Indirect Prompt Injection Against Tool-Using LLM Agents},
+  year   = {2026},
+  note   = {arXiv preprint (link TBD)},
+  url    = {https://github.com/oliurrahmanoli/scriptshift-artifact}
+}
+```
