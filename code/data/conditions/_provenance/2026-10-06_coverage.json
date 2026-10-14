@@ -1,0 +1,64 @@
+{
+  "pairs_150.json": {
+    "n_pairs": 150,
+    "n_injection_tasks": 35,
+    "per_condition": {
+      "en": {
+        "pairs_covered": 150,
+        "wrapper_W1": true,
+        "tasks_missing": [],
+        "pairs_missing": 0
+      },
+      "bn_mt": {
+        "pairs_covered": 150,
+        "wrapper_W1": true,
+        "tasks_missing": [],
+        "pairs_missing": 0
+      },
+      "bn_llm": {
+        "pairs_covered": 150,
+        "wrapper_W1": true,
+        "tasks_missing": [],
+        "pairs_missing": 0
+      },
+      "banglish_llm": {
+        "pairs_covered": 150,
+        "wrapper_W1": true,
+        "tasks_missing": [],
+        "pairs_missing": 0
+      }
+    },
+    "pairs_covered_in_all_4": 150
+  },
+  "pairs.json": {
+    "n_pairs": 300,
+    "n_injection_tasks": 35,
+    "per_condition": {
+      "en": {
+        "pairs_covered": 300,
+        "wrapper_W1": true,
+        "tasks_missing": [],
+        "pairs_missing": 0
+      },
+      "bn_mt": {
+        "pairs_covered": 300,
+        "wrapper_W1": true,
+        "tasks_missing": [],
+        "pairs_missing": 0
+      },
+      "bn_llm": {
+        "pairs_covered": 300,
+        "wrapper_W1": true,
+        "tasks_missing": [],
+        "pairs_missing": 0
+      },
+      "banglish_llm": {
+        "pairs_covered": 300,
+        "wrapper_W1": true,
+        "tasks_missing": [],
+        "pairs_missing": 0
+      }
+    },
+    "pairs_covered_in_all_4": 300
+  }
+}

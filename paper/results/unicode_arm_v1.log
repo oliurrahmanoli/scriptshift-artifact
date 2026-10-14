@@ -1,0 +1,39 @@
+{
+  "arm": "unicode_preserving",
+  "analysis_status": "secondary_post_hoc_D41",
+  "synthetic": false,
+  "metric": "normalised_security",
+  "label": "unicode_arm_v1",
+  "tiers": [
+    "tier_A"
+  ],
+  "rules": {
+    "model_error_rule": "failure",
+    "overflow_rule": "pair",
+    "self_generated_models": [
+      "gemma-4-26b-a4b"
+    ]
+  },
+  "n_listed": 922,
+  "n_rerun_rows": 922,
+  "n_rerun_missing": 0,
+  "retry_merged_into_stock": 0,
+  "patch_ok_all": true,
+  "code_git_commit": "51dd2f582da2ef1189a65e1c4c4a151748052aaf",
+  "input_sha256": {
+    "results/main/gemma/runs/gemma_150.jsonl": "5bd112c96673fba80bf60a7876a9b2392373760e8c17a16a1b95773e6236518a",
+    "results/main/gptoss/runs/gptoss_150.jsonl": "1dab2319f4e4b88a828a302b5e0e7def22963f789390765b40a42237212aeaf2",
+    "results/main/granite/runs/granite_150.jsonl": "92e4afe019996353b59120c0c7ffd62e772d088af19745e77e8cf54399508404",
+    "results/main/ministral/runs/ministral_150.jsonl": "a6066858ed4e2c990da9507140e41c2307680357e5fa698244c3e82ce7fbb863",
+    "results/main/qwen/runs/qwen_150.jsonl": "0f5749a449a85a8ab33a2b4a13e6b170d01466e01c544623fa233a8b04579b56",
+    "results/uni/gemma/runs/gemma_150_uni.jsonl": "63e5674adfe3ff915d6539a608290fd43e9e4c28a4c2482131bb0047eb186ed9",
+    "results/uni/gptoss/runs/gptoss_150_uni.jsonl": "da921d4f678ca8f023cdd8aa3c138d3ca875b0880dbbb14c872c7695739e02a7",
+    "results/uni/granite/runs/granite_150_uni.jsonl": "4960455e33a4d1e417b4e578cf60c4b55e0e27c4e8e8c959e58c3e166d33322c",
+    "results/uni/ministral/runs/ministral_150_uni.jsonl": "285bce0fa14bbf9b96102d778df50c0d0c4aa2a24c1b0cd6c658223856939a93",
+    "results/uni/qwen/runs/qwen_150_uni.jsonl": "6426c5da062a4d96110bc30569205d882411fe14178c5e02f212d40ad6d0d7f3",
+    "results/uni/ministral/runs/ministral_150_stockretry.jsonl": "2b69ea2cded34b740c856068006106512ea9400ded94ab8802c2e87c18752e51"
+  },
+  "n_boot": 10000,
+  "seed": 20261002,
+  "note": "Secondary, post hoc arm (D41). Primary inference stays the stock run (D38)."
+}

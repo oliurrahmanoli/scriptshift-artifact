@@ -1,0 +1,37 @@
+# Python / envs / caches
+.venv/
+.venv-*/
+venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.cache/
+.ipynb_checkpoints/
+# Secrets and credentials (never commit)
+.env
+.env.*
+kaggle.json
+*.pem
+*.key
+judge_config.json
+# Model weights / large binaries
+*.gguf
+*.safetensors
+*.bin
+*.pt
+*.onnx
+# Archives (provenance zips and per-model trace bundles are tracked)
+*.zip
+*.tar
+*.tar.gz
+!code/data/conditions/_provenance/**/*.zip
+!code/results/*/*/*_traces.zip
+# Backups and new run logs
+*.bak*
+code/runs/*.jsonl
+!code/runs/examples/*.jsonl
+code/analysis/out/*
+!code/analysis/out/pilot_utility/
+# OS / editor
+.DS_Store
+*.swp

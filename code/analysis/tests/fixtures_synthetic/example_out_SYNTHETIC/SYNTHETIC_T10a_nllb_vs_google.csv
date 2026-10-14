@@ -1,0 +1,4 @@
+model,cond_a,cond_b,metric,n_pairs,n_clusters,asr_a,asr_b,diff_pp,ci_lo_pp,ci_hi_pp,bca_lo_pp,bca_hi_pp,mcnemar_p,n_only_a,n_only_b,synthetic
+SYNTH-model-A,bn_mt,bn_mt_nllb,normalised_security,140,35,0.21428571428571427,0.19285714285714287,-2.1428571428571406,-12.875,8.607142857142867,,,0.6900379657745361,14,11,True
+SYNTH-model-B,bn_mt,bn_mt_nllb,normalised_security,140,35,0.24285714285714285,0.24285714285714285,0.0,-7.857142857142857,7.16071428571429,,,1.0,8,8,True
+SYNTH-model-C,bn_mt,bn_mt_nllb,normalised_security,140,35,0.19285714285714287,0.22142857142857142,2.8571428571428554,-4.285714285714287,12.142857142857144,,,0.454498291015625,6,10,True

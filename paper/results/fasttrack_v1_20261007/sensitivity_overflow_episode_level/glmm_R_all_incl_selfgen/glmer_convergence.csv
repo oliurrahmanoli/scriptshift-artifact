@@ -1,0 +1,2 @@
+"scope","n_rows","n_models","intercept_model_singular","intercept_model_warnings","intercept_model_conv_messages","random_slope_attempt","model_used"
+"all",2994,5,FALSE,"none","none","singular fit","random_intercepts"

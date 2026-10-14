@@ -1,0 +1,28 @@
+{
+  "generator": "gemma-4-26b-a4b",
+  "gemma_gguf_sha256": "3eca3b8f6d7baf218a7dd6bba5fb59a56ee25fe2d567b6f5f589b4f697eca51d",
+  "rev": "d1c082be9cf3c8a514acf63b8761f4b41935842e",
+  "llama_build": "b11344",
+  "serve_variant": "swa_full+no_think",
+  "temperature": 0.7,
+  "max_attempts": 4,
+  "seed": 20261002,
+  "conditions": {
+    "bn_llm": {
+      "filled": 29,
+      "n": 35
+    },
+    "banglish_llm": {
+      "filled": 32,
+      "n": 35
+    }
+  },
+  "wrappers": {
+    "bn_llm": true,
+    "banglish_llm": true
+  },
+  "nllb_audit": {},
+  "qwen_subset": {},
+  "run_date": "2026-10-06",
+  "self_equiv": true
+}

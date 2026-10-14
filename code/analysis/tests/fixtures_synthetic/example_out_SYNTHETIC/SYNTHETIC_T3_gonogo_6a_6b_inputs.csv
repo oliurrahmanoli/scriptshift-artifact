@@ -1,0 +1,4 @@
+contrast,n_models,models_holm_sig_positive,models_holm_sig_negative,pooled_gee_p_holm3,pooled_tost_equivalent,per_model_tost_equivalent,synthetic
+C1,3,3,0,4.55553101907924e-08,False,0,True
+C2,3,0,0,0.06909264154284256,True,1,True
+C3,3,3,0,3.277755586950093e-07,False,0,True

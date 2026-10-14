@@ -1,0 +1,109 @@
+{
+  "run": "2026-10-06T16:53:25",
+  "dry_run": false,
+  "gen_dir": "<scratch>/regen/gen/llm_payloads",
+  "nllb_rerun_dir": "<scratch>/regen/nllb/bn_mt_nllb_rerun",
+  "merged": {
+    "bn_llm": [
+      "workspace/injection_task_2",
+      "workspace/injection_task_4",
+      "workspace/injection_task_13",
+      "banking/injection_task_7",
+      "slack/injection_task_2",
+      "slack/injection_task_3",
+      "slack/injection_task_4",
+      "slack/injection_task_1",
+      "travel/injection_task_1"
+    ],
+    "banglish_llm": [
+      "workspace/injection_task_0",
+      "workspace/injection_task_5",
+      "slack/injection_task_1",
+      "slack/injection_task_2",
+      "slack/injection_task_4"
+    ],
+    "bn_mt": [
+      "workspace/injection_task_13",
+      "workspace/injection_task_4",
+      "workspace/injection_task_9",
+      "workspace/injection_task_12",
+      "travel/injection_task_0",
+      "travel/injection_task_6"
+    ]
+  },
+  "rejected": {
+    "bn_llm": {},
+    "banglish_llm": {},
+    "bn_mt": {}
+  },
+  "counts_filled_of_35": {
+    "en": 35,
+    "bn_mt": 35,
+    "bn_llm": 35,
+    "banglish_llm": 35
+  },
+  "coverage": {
+    "pairs_150.json": {
+      "n_pairs": 150,
+      "n_injection_tasks": 35,
+      "per_condition": {
+        "en": {
+          "pairs_covered": 150,
+          "wrapper_W1": true,
+          "tasks_missing": [],
+          "pairs_missing": 0
+        },
+        "bn_mt": {
+          "pairs_covered": 150,
+          "wrapper_W1": true,
+          "tasks_missing": [],
+          "pairs_missing": 0
+        },
+        "bn_llm": {
+          "pairs_covered": 150,
+          "wrapper_W1": true,
+          "tasks_missing": [],
+          "pairs_missing": 0
+        },
+        "banglish_llm": {
+          "pairs_covered": 150,
+          "wrapper_W1": true,
+          "tasks_missing": [],
+          "pairs_missing": 0
+        }
+      },
+      "pairs_covered_in_all_4": 150
+    },
+    "pairs.json": {
+      "n_pairs": 300,
+      "n_injection_tasks": 35,
+      "per_condition": {
+        "en": {
+          "pairs_covered": 300,
+          "wrapper_W1": true,
+          "tasks_missing": [],
+          "pairs_missing": 0
+        },
+        "bn_mt": {
+          "pairs_covered": 300,
+          "wrapper_W1": true,
+          "tasks_missing": [],
+          "pairs_missing": 0
+        },
+        "bn_llm": {
+          "pairs_covered": 300,
+          "wrapper_W1": true,
+          "tasks_missing": [],
+          "pairs_missing": 0
+        },
+        "banglish_llm": {
+          "pairs_covered": 300,
+          "wrapper_W1": true,
+          "tasks_missing": [],
+          "pairs_missing": 0
+        }
+      },
+      "pairs_covered_in_all_4": 300
+    }
+  }
+}

@@ -1,0 +1,3 @@
+kind,run_a,run_b,condition,n,flip_rate,asr_a,asr_b,synthetic
+repeat,SYNTH-model-A,SYNTH-model-A-rep1,bn_native,140,0.02857142857142857,0.3,0.2857142857142857,True
+repeat,SYNTH-model-A,SYNTH-model-A-rep1,en,140,0.007142857142857143,0.25,0.2571428571428571,True

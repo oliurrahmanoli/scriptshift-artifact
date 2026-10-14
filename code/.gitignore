@@ -1,0 +1,18 @@
+# caches and envs
+.venv/
+.venv-*/
+__pycache__/
+*.pyc
+.cache/
+# model weights / large artefacts
+*.gguf
+*.safetensors
+# run logs (keep the committed smoke example under runs/examples/)
+runs/*.jsonl
+!runs/examples/*.jsonl
+# OS
+.DS_Store
+.pytest_cache/
+
+# harness test venv (box)
+../.venv-harness/

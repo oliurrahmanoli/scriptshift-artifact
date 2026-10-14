@@ -1,0 +1,61 @@
+{
+  "synthetic": false,
+  "metric_used": "normalised_security",
+  "n_episodes": 3485,
+  "label": "judge_aug_v1_normalised_check",
+  "rules": {
+    "model_error_rule": "failure",
+    "overflow_rule": "pair",
+    "self_generated_models": [
+      "gemma-4-26b-a4b"
+    ]
+  },
+  "code_git_commit": "b5607045e89421e79b1d2d486d8e7dac824dbb7e",
+  "input_sha256": {
+    "results/main/gemma/runs/gemma_150.jsonl": "5bd112c96673fba80bf60a7876a9b2392373760e8c17a16a1b95773e6236518a",
+    "results/main/gptoss/runs/gptoss_150.jsonl": "1dab2319f4e4b88a828a302b5e0e7def22963f789390765b40a42237212aeaf2",
+    "results/main/granite/runs/granite_150.jsonl": "92e4afe019996353b59120c0c7ffd62e772d088af19745e77e8cf54399508404",
+    "results/main/ministral/runs/ministral_150.jsonl": "a6066858ed4e2c990da9507140e41c2307680357e5fa698244c3e82ce7fbb863",
+    "results/main/qwen/runs/qwen_150.jsonl": "0f5749a449a85a8ab33a2b4a13e6b170d01466e01c544623fa233a8b04579b56",
+    "results/judge/judge_gemma.jsonl": "22cf433cb0e4b2f5879139a3d69bfc99704f0c02286518132896055f031cc427",
+    "results/judge/judge_qwen.jsonl": "e39e14932d4460689218d6462087f9da5ec36fbbee40c98a518a9d411c61f54c"
+  },
+  "python_packages": {
+    "numpy": "2.5.3",
+    "scipy": "1.18.1",
+    "pandas": "3.0.6",
+    "statsmodels": "0.15.0",
+    "matplotlib": "3.11.2"
+  },
+  "raw_mismatch_trace_vs_score": 0,
+  "retry_merged": 0,
+  "retry_inputs": {
+    "traces": [],
+    "scores": []
+  },
+  "inputs": {
+    "traces": [
+      "results/main/gemma/runs/traces",
+      "results/main/gptoss/runs/traces",
+      "results/main/granite/runs/traces",
+      "results/main/ministral/runs/traces",
+      "results/main/qwen/runs/traces"
+    ],
+    "scores": [
+      "results/main/gemma/runs/gemma_150.jsonl",
+      "results/main/gptoss/runs/gptoss_150.jsonl",
+      "results/main/granite/runs/granite_150.jsonl",
+      "results/main/ministral/runs/ministral_150.jsonl",
+      "results/main/qwen/runs/qwen_150.jsonl"
+    ],
+    "judge": [
+      "results/judge/judge_gemma.jsonl",
+      "results/judge/judge_qwen.jsonl"
+    ],
+    "probe": null,
+    "detectors": null
+  },
+  "n_boot": 10000,
+  "seed": 20261002
+}
+wrote 26 artefacts to <repo>/paper/results/judge_aug_v1/normalised_w_judge

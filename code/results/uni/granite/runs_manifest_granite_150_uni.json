@@ -1,0 +1,185 @@
+{
+  "run_id": "granite_150_uni",
+  "arm": "unicode_preserving",
+  "decision": "D41",
+  "model_key": "granite",
+  "label": "granite-4.2-8b",
+  "tiers": [
+    "tier_A"
+  ],
+  "n_tasks": 199,
+  "streams_per_server": 1,
+  "smoke_n": null,
+  "gguf": {
+    "repo": "ibm-granite/granite-4.2-8b-GGUF",
+    "rev": "93f3f6a8938ee922b784cf4e5b4203cd3428df8f",
+    "file": "granite-4.2-8b-Q4_K_M.gguf",
+    "size": 5347917952,
+    "sha256": "16a9369d0805f80b7377d25d87f937a90c05dc04ad79173a52001e42c9aab311"
+  },
+  "serve": {
+    "layout": "2replica",
+    "variant": "no_think_kwargs",
+    "ports": [
+      8099,
+      8100
+    ],
+    "model_id": "/tmp/models/granite-4.2-8b-Q4_K_M.gguf",
+    "servers": [
+      {
+        "port": 8099,
+        "gpu": "0",
+        "cmd": [
+          "-m",
+          "/tmp/models/granite-4.2-8b-Q4_K_M.gguf",
+          "--host",
+          "127.0.0.1",
+          "-ngl",
+          "99",
+          "-c",
+          "24576",
+          "-np",
+          "1",
+          "--jinja",
+          "--temp",
+          "0",
+          "--seed",
+          "20261002",
+          "--port",
+          "8099",
+          "--chat-template-kwargs",
+          "{\"enable_thinking\":false}"
+        ],
+        "log": "/kaggle/working/server_8099.log"
+      },
+      {
+        "port": 8100,
+        "gpu": "1",
+        "cmd": [
+          "-m",
+          "/tmp/models/granite-4.2-8b-Q4_K_M.gguf",
+          "--host",
+          "127.0.0.1",
+          "-ngl",
+          "99",
+          "-c",
+          "24576",
+          "-np",
+          "1",
+          "--jinja",
+          "--temp",
+          "0",
+          "--seed",
+          "20261002",
+          "--port",
+          "8100",
+          "--chat-template-kwargs",
+          "{\"enable_thinking\":false}"
+        ],
+        "log": "/kaggle/working/server_8100.log"
+      }
+    ],
+    "template_ok": true,
+    "template_tails": {
+      "8099": "<|im_start|>system\n<|im_end|>\n<|im_start|>user\nping<|im_end|>\n<|im_start|>assistant\n<think></think>",
+      "8100": "<|im_start|>system\n<|im_end|>\n<|im_start|>user\nping<|im_end|>\n<|im_start|>assistant\n<think></think>"
+    }
+  },
+  "llama_build": "b11344",
+  "seed": 20261002,
+  "pinned": {
+    "agentdojo": "0.1.35",
+    "openai": "3.23.0",
+    "google-genai": "2.12.1",
+    "python": "3.13.15",
+    "benchmark_version": "v1.2.2"
+  },
+  "embed": {
+    "sha256": "664caa1950b0491df3bedbc179a92b0760d71a5d8644909444aa93fb48eb3b66",
+    "bytes": 114573,
+    "n_files": 168
+  },
+  "stock_embed_sha256": "ee7b4195e694977b3f4e060155d66ca373027cdc2dee98ee88750b5305169334",
+  "selection_sha256": "66a016a4c18a20c87bc109a5bbf990e5f06aa719f74f857a783982b37a9f3547",
+  "unicode_patch": {
+    "patch_id": "D41-unicode-preserving-v1",
+    "enabled": false,
+    "agentdojo": "0.1.35",
+    "targets": [
+      "agentdojo.agent_pipeline.tool_execution.tool_result_to_str: default dump_fn yaml.safe_dump -> yaml.safe_dump(allow_unicode=True)",
+      "agentdojo.agent_pipeline.llms.openai_llm._tool_call_to_openai: json.dumps(args) -> json.dumps(args, ensure_ascii=False)"
+    ],
+    "enabled_for_arm": true
+  },
+  "payload_verify": {
+    "files": 146,
+    "canonical": 4,
+    "goal_files_vs_payloads_json": 140,
+    "wrappers": 4,
+    "conditions": [
+      "banglish_llm",
+      "bn_llm",
+      "bn_mt",
+      "en"
+    ],
+    "sums_sha256": "83e60ad7f7aa2593d9a50434b42e972d6ff39e779b6b3e867b81ead55be9010c"
+  },
+  "resume_seeded": {
+    "jsonl": 0,
+    "zips": 0,
+    "lines": 0,
+    "traces": 0
+  },
+  "stats": {
+    "n_tasks": 199,
+    "already_done": 0,
+    "ran": 199,
+    "ok": 199,
+    "error": 0,
+    "worker_errors": [],
+    "remaining": 0,
+    "stopped_by_deadline": false,
+    "grid_s": 3525.3,
+    "eps_per_h": 203.2,
+    "arm": "unicode_preserving"
+  },
+  "summary": {
+    "per_condition": {
+      "bn_mt": {
+        "expected": 100,
+        "ok": 100,
+        "error": 0,
+        "missing": 0
+      },
+      "bn_llm": {
+        "expected": 99,
+        "ok": 99,
+        "error": 0,
+        "missing": 0
+      }
+    },
+    "episodes_expected": 199,
+    "episodes_done": 199,
+    "errors": 0,
+    "missing": 0,
+    "complete": true
+  },
+  "traces_zip": {
+    "zip": "/kaggle/working/granite_150_uni_traces.zip",
+    "n_traces": 199,
+    "zip_bytes": 965196
+  },
+  "est_session_h": 1.28,
+  "session_started": "2026-10-06T16:06:46",
+  "session_ended": "2026-10-06T17:08:18",
+  "wall_s": 3691.8,
+  "outputs": {
+    "jsonl": "/kaggle/working/runs/granite_150_uni.jsonl",
+    "traces_dir": "/kaggle/working/runs/traces_uni",
+    "traces_zip": "/kaggle/working/granite_150_uni_traces.zip",
+    "server_logs": [
+      "/kaggle/working/server_8099.log",
+      "/kaggle/working/server_8100.log"
+    ]
+  }
+}

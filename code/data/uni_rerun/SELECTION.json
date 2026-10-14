@@ -1,0 +1,193 @@
+{
+ "_meta": {
+  "decision": "D41",
+  "arm": "unicode_preserving (secondary, post hoc)",
+  "generated_by": "scripts/select_uni_rerun.py",
+  "stock_embed_sha256": "ee7b4195e694977b3f4e060155d66ca373027cdc2dee98ee88750b5305169334",
+  "criterion_tier_A": "stock attack episode in which some <INFORMATION> block reached the agent with \\uXXXX/\\xXX escapes (any condition); + model-output-error episodes without messages whose same-model sibling Bengali-script episode was escaped",
+  "criterion_tier_B": "other attack episodes whose agent input still differs under the patch (escapes outside the injected block, or non-ASCII tool-call args replayed)",
+  "criterion_stock_retry": "infrastructure-error episodes (APITimeout etc.), rerun with the patch OFF",
+  "payload_ascii_check": {
+   "en": {
+    "goals_with_non_ascii": 0,
+    "n_goals": 35,
+    "wrapper_non_ascii_chars": 0
+   },
+   "bn_mt": {
+    "goals_with_non_ascii": 35,
+    "n_goals": 35,
+    "wrapper_non_ascii_chars": 199
+   },
+   "bn_llm": {
+    "goals_with_non_ascii": 35,
+    "n_goals": 35,
+    "wrapper_non_ascii_chars": 172
+   },
+   "banglish_llm": {
+    "goals_with_non_ascii": 0,
+    "n_goals": 35,
+    "wrapper_non_ascii_chars": 0
+   }
+  },
+  "sources": {
+   "gemma": {
+    "jsonl": "results/main/gemma/runs/gemma_150.jsonl",
+    "jsonl_sha256": "5bd112c96673fba80bf60a7876a9b2392373760e8c17a16a1b95773e6236518a",
+    "traces_zip": "results/main/gemma/gemma_150_traces.zip",
+    "traces_zip_sha256": "08384f44cd6ec41a51262c4bb914df4abde6b2ea22a6836c5681120712b5c9dd"
+   },
+   "gptoss": {
+    "jsonl": "results/main/gptoss/runs/gptoss_150.jsonl",
+    "jsonl_sha256": "1dab2319f4e4b88a828a302b5e0e7def22963f789390765b40a42237212aeaf2",
+    "traces_zip": "results/main/gptoss/gptoss_150_traces.zip",
+    "traces_zip_sha256": "cc1171c26d3716714d7cb7c2f473866a44acef95e1a8fd2ae27e6cad898d8ca6"
+   },
+   "granite": {
+    "jsonl": "results/main/granite/runs/granite_150.jsonl",
+    "jsonl_sha256": "92e4afe019996353b59120c0c7ffd62e772d088af19745e77e8cf54399508404",
+    "traces_zip": "results/main/granite/granite_150_traces.zip",
+    "traces_zip_sha256": "b73d4c5f42b901a9c0096e9984b273092c7cd8bd153ad4fbb1c7ddc4ad44d4d5"
+   },
+   "ministral": {
+    "jsonl": "results/main/ministral/runs/ministral_150.jsonl",
+    "jsonl_sha256": "a6066858ed4e2c990da9507140e41c2307680357e5fa698244c3e82ce7fbb863",
+    "traces_zip": "results/main/ministral/ministral_150_traces.zip",
+    "traces_zip_sha256": "c74e850a93402a1d41fa7455e66de85a6fb78ac1d62ff41381b6180d075fe45c"
+   },
+   "qwen": {
+    "jsonl": "results/main/qwen/runs/qwen_150.jsonl",
+    "jsonl_sha256": "0f5749a449a85a8ab33a2b4a13e6b170d01466e01c544623fa233a8b04579b56",
+    "traces_zip": "results/main/qwen/qwen_150_traces.zip",
+    "traces_zip_sha256": "ea8162cf9b11a7a5fa845f1e97fda7fdf012c94c997956a9542f4d3e68bb7687"
+   }
+  },
+  "counts": {
+   "gemma": {
+    "tier_A": {
+     "bn_mt": 95,
+     "bn_llm": 95,
+     "total": 190
+    },
+    "tier_B": {
+     "en": 36,
+     "bn_mt": 18,
+     "bn_llm": 18,
+     "banglish_llm": 35,
+     "total": 107
+    },
+    "stock_retry": {
+     "total": 0
+    },
+    "tier_A_reasons": {
+     "injection_escaped": 189,
+     "error_no_trace_sibling_escaped": 1
+    }
+   },
+   "gptoss": {
+    "tier_A": {
+     "bn_mt": 84,
+     "bn_llm": 85,
+     "total": 169
+    },
+    "tier_B": {
+     "en": 38,
+     "bn_mt": 21,
+     "bn_llm": 20,
+     "banglish_llm": 31,
+     "total": 110
+    },
+    "stock_retry": {
+     "total": 0
+    },
+    "tier_A_reasons": {
+     "injection_escaped": 163,
+     "injection_escaped_mixed_with_script": 6
+    }
+   },
+   "granite": {
+    "tier_A": {
+     "bn_mt": 100,
+     "bn_llm": 99,
+     "total": 199
+    },
+    "tier_B": {
+     "en": 34,
+     "bn_mt": 15,
+     "bn_llm": 16,
+     "banglish_llm": 30,
+     "total": 95
+    },
+    "stock_retry": {
+     "total": 0
+    },
+    "tier_A_reasons": {
+     "injection_escaped": 199
+    }
+   },
+   "ministral": {
+    "tier_A": {
+     "bn_mt": 88,
+     "bn_llm": 88,
+     "total": 176
+    },
+    "tier_B": {
+     "en": 25,
+     "bn_mt": 20,
+     "bn_llm": 18,
+     "banglish_llm": 25,
+     "total": 88
+    },
+    "stock_retry": {
+     "en": 1,
+     "total": 1
+    },
+    "tier_A_reasons": {
+     "injection_escaped": 176
+    }
+   },
+   "qwen": {
+    "tier_A": {
+     "bn_mt": 94,
+     "bn_llm": 94,
+     "total": 188
+    },
+    "tier_B": {
+     "en": 28,
+     "bn_mt": 18,
+     "bn_llm": 18,
+     "banglish_llm": 28,
+     "total": 92
+    },
+    "stock_retry": {
+     "total": 0
+    },
+    "tier_A_reasons": {
+     "injection_escaped": 182,
+     "injection_escaped_mixed_with_script": 6
+    }
+   }
+  }
+ },
+ "files": {
+  "gemma": {
+   "path": "data/uni_rerun/episodes_gemma.json",
+   "sha256": "768ab893e6edf2ed6a1afaf8963519376f1f3b2a6e904dc009ba333cdef28ce0"
+  },
+  "gptoss": {
+   "path": "data/uni_rerun/episodes_gptoss.json",
+   "sha256": "c0394386df2df67ddce518d964cddc547166353c0928ffd2f99a30c443119f7f"
+  },
+  "granite": {
+   "path": "data/uni_rerun/episodes_granite.json",
+   "sha256": "66a016a4c18a20c87bc109a5bbf990e5f06aa719f74f857a783982b37a9f3547"
+  },
+  "ministral": {
+   "path": "data/uni_rerun/episodes_ministral.json",
+   "sha256": "0b091e7785c11923a85df4ac1a001f385557e220f936b042cb8daf00ed9334d7"
+  },
+  "qwen": {
+   "path": "data/uni_rerun/episodes_qwen.json",
+   "sha256": "2de7ac609e739bc1086c2522a7a9919f268d4a1a6959c11fae766948ae9b7374"
+  }
+ }
+}

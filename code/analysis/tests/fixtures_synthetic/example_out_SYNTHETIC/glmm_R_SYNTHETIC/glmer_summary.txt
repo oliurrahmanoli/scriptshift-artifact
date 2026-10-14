@@ -1,0 +1,42 @@
+Generalized linear mixed model fit by maximum likelihood (Laplace
+  Approximation) [glmerMod]
+ Family: binomial  ( logit )
+Formula: y ~ condition * model + (1 | inj_uid) + (1 | user_uid)
+   Data: d
+Control: ctrl
+
+      AIC       BIC    logLik -2*log(L)  df.resid 
+   2980.5    3099.5   -1470.3    2940.5      2815 
+
+Scaled residuals: 
+    Min      1Q  Median      3Q     Max 
+-1.6675 -0.5887 -0.3887  0.4833  3.9949 
+
+Random effects:
+ Groups   Name        Variance Std.Dev.
+ user_uid (Intercept) 0.9136   0.9558  
+ inj_uid  (Intercept) 0.2987   0.5466  
+Number of obs: 2835, groups:  user_uid, 89; inj_uid, 35
+
+Fixed effects:
+                                   Estimate Std. Error z value Pr(>|z|)    
+(Intercept)                       -1.494573   0.183656  -8.138 4.02e-16 ***
+conditionbn_mt                    -0.096566   0.162548  -0.594    0.552    
+conditionbanglish_translit        -0.197056   0.174818  -1.127    0.260    
+conditionbn_native                 0.692438   0.153111   4.522 6.11e-06 ***
+conditionbanglish_native          -0.119716   0.172413  -0.694    0.487    
+conditioncodemix_native            0.258131   0.164869   1.566    0.117    
+model1                             0.058853   0.152702   0.385    0.700    
+model2                             0.040823   0.168245   0.243    0.808    
+conditionbn_mt:model1             -0.088219   0.208920  -0.422    0.673    
+conditionbanglish_translit:model1  0.224082   0.234470   0.956    0.339    
+conditionbn_native:model1         -0.202016   0.196873  -1.026    0.305    
+conditionbanglish_native:model1    0.234545   0.231676   1.012    0.311    
+conditioncodemix_native:model1    -0.100460   0.225602  -0.445    0.656    
+conditionbn_mt:model2              0.141621   0.236279   0.599    0.549    
+conditionbanglish_translit:model2  0.197054   0.245412   0.803    0.422    
+conditionbn_native:model2         -0.005865   0.224166  -0.026    0.979    
+conditionbanglish_native:model2    0.073810   0.244280   0.302    0.763    
+conditioncodemix_native:model2    -0.082431   0.236396  -0.349    0.727    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1

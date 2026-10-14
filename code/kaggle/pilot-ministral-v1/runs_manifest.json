@@ -1,0 +1,16 @@
+{
+  "runs_root": "/kaggle/working/runs",
+  "models": {
+    "ministral-3-14b": {
+      "n_json": 37,
+      "bytes": 239111,
+      "sample": [
+        "ministral-3-14b/slack/user_task_19/none/none.json",
+        "ministral-3-14b/slack/user_task_1/none/none.json",
+        "ministral-3-14b/slack/user_task_18/none/none.json",
+        "ministral-3-14b/slack/user_task_2/none/none.json",
+        "ministral-3-14b/slack/user_task_15/none/none.json"
+      ]
+    }
+  }
+}

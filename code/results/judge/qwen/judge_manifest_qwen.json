@@ -1,0 +1,717 @@
+{
+  "run_id": "judge_qwen",
+  "judge_id": "qwen_kaggle",
+  "judge_model": "qwen3.6-35b-a3b",
+  "scope": "all",
+  "smoke_n": null,
+  "gguf": {
+    "repo": "ggml-org/Qwen3.6-35B-A3B-GGUF",
+    "rev": "baec3ebee244827cda0f4557eafa8b28f7545fa6",
+    "file": "Qwen3.6-35B-A3B-Q4_K_M.gguf",
+    "size": 20419565568,
+    "sha256": "671e47e0ec53c665d048b98c3ecbfd5236b5ca9c3e02ed19fc8f81f7b85140c7"
+  },
+  "serve": {
+    "layout": "tensor_split",
+    "variant": "no_think",
+    "ports": [
+      8099
+    ],
+    "model_id": "/tmp/models/Qwen3.6-35B-A3B-Q4_K_M.gguf",
+    "servers": [
+      {
+        "port": 8099,
+        "gpu": "0,1",
+        "cmd": [
+          "-m",
+          "/tmp/models/Qwen3.6-35B-A3B-Q4_K_M.gguf",
+          "--host",
+          "127.0.0.1",
+          "-ngl",
+          "99",
+          "-c",
+          "24576",
+          "-np",
+          "1",
+          "--jinja",
+          "--temp",
+          "0",
+          "--seed",
+          "20261002",
+          "--port",
+          "8099",
+          "--tensor-split",
+          "1,1",
+          "--chat-template-kwargs",
+          "{\"enable_thinking\":false}"
+        ],
+        "log": "/kaggle/working/server_8099.log"
+      }
+    ],
+    "template_ok": true,
+    "template_tails": {
+      "8099": "<|im_start|>user\nping<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\n"
+    }
+  },
+  "llama_build": "b11344",
+  "seed": 20261002,
+  "rubric_sha256": "0e76965e5325c8711966d682cb11724ce56a5261ff43d2a81cb80093b45ed88d",
+  "embed": {
+    "sha256": "2f1903551d7dffbe6013cd0edb2cfa2d884ac8010984b55cc7e359fc00fb229d",
+    "bytes": 421848
+  },
+  "inputs_sha256": "5e94a7f1e2fa04032d5406493e53f6e75bae404974fd53c176cb65cad338b099",
+  "resume_seeded": null,
+  "run_judge_summary": {
+    "selected": 2392,
+    "gated": 155,
+    "already_done": 0,
+    "to_judge": 2392,
+    "to_judge_gated": 155,
+    "skipped_other_judge": 0,
+    "missing_trace": 0,
+    "by_judge": {
+      "qwen_kaggle": 2392
+    },
+    "rubric_sha256": "0e76965e5325c8711966d682cb11724ce56a5261ff43d2a81cb80093b45ed88d",
+    "judged": 2392,
+    "stopped_at_deadline": false
+  },
+  "summary": {
+    "judged": 2392,
+    "gated_done": 155,
+    "gated_total": 155,
+    "all_done": 2392,
+    "all_total": 2392,
+    "complete_gated": true,
+    "complete_all": true,
+    "verdicts": {
+      "partial": 72,
+      "full": 459,
+      "no": 1861
+    },
+    "full_on_gated": 50,
+    "unparseable": 0,
+    "finish_length": 0,
+    "latency_s_median": 1.872
+  },
+  "tally": [
+    [
+      "gemma-4-26b-a4b",
+      "banglish_llm",
+      "gated",
+      "full",
+      4
+    ],
+    [
+      "gemma-4-26b-a4b",
+      "banglish_llm",
+      "gated",
+      "no",
+      2
+    ],
+    [
+      "gemma-4-26b-a4b",
+      "banglish_llm",
+      "gated",
+      "partial",
+      3
+    ],
+    [
+      "gemma-4-26b-a4b",
+      "banglish_llm",
+      "ungated",
+      "full",
+      18
+    ],
+    [
+      "gemma-4-26b-a4b",
+      "banglish_llm",
+      "ungated",
+      "no",
+      123
+    ],
+    [
+      "gemma-4-26b-a4b",
+      "bn_llm",
+      "gated",
+      "no",
+      3
+    ],
+    [
+      "gemma-4-26b-a4b",
+      "bn_llm",
+      "gated",
+      "partial",
+      4
+    ],
+    [
+      "gemma-4-26b-a4b",
+      "bn_llm",
+      "ungated",
+      "full",
+      14
+    ],
+    [
+      "gemma-4-26b-a4b",
+      "bn_llm",
+      "ungated",
+      "no",
+      128
+    ],
+    [
+      "gemma-4-26b-a4b",
+      "bn_mt",
+      "gated",
+      "full",
+      4
+    ],
+    [
+      "gemma-4-26b-a4b",
+      "bn_mt",
+      "gated",
+      "no",
+      5
+    ],
+    [
+      "gemma-4-26b-a4b",
+      "bn_mt",
+      "gated",
+      "partial",
+      2
+    ],
+    [
+      "gemma-4-26b-a4b",
+      "bn_mt",
+      "ungated",
+      "full",
+      8
+    ],
+    [
+      "gemma-4-26b-a4b",
+      "bn_mt",
+      "ungated",
+      "no",
+      131
+    ],
+    [
+      "gemma-4-26b-a4b",
+      "en",
+      "gated",
+      "no",
+      1
+    ],
+    [
+      "gemma-4-26b-a4b",
+      "en",
+      "gated",
+      "partial",
+      2
+    ],
+    [
+      "gemma-4-26b-a4b",
+      "en",
+      "ungated",
+      "full",
+      56
+    ],
+    [
+      "gemma-4-26b-a4b",
+      "en",
+      "ungated",
+      "no",
+      90
+    ],
+    [
+      "gemma-4-26b-a4b",
+      "en",
+      "ungated",
+      "partial",
+      1
+    ],
+    [
+      "gpt-oss-20b",
+      "banglish_llm",
+      "gated",
+      "no",
+      3
+    ],
+    [
+      "gpt-oss-20b",
+      "banglish_llm",
+      "gated",
+      "partial",
+      1
+    ],
+    [
+      "gpt-oss-20b",
+      "banglish_llm",
+      "ungated",
+      "full",
+      23
+    ],
+    [
+      "gpt-oss-20b",
+      "banglish_llm",
+      "ungated",
+      "no",
+      119
+    ],
+    [
+      "gpt-oss-20b",
+      "banglish_llm",
+      "ungated",
+      "partial",
+      4
+    ],
+    [
+      "gpt-oss-20b",
+      "bn_llm",
+      "gated",
+      "full",
+      1
+    ],
+    [
+      "gpt-oss-20b",
+      "bn_llm",
+      "gated",
+      "no",
+      5
+    ],
+    [
+      "gpt-oss-20b",
+      "bn_llm",
+      "gated",
+      "partial",
+      2
+    ],
+    [
+      "gpt-oss-20b",
+      "bn_llm",
+      "ungated",
+      "full",
+      14
+    ],
+    [
+      "gpt-oss-20b",
+      "bn_llm",
+      "ungated",
+      "no",
+      127
+    ],
+    [
+      "gpt-oss-20b",
+      "bn_mt",
+      "gated",
+      "full",
+      1
+    ],
+    [
+      "gpt-oss-20b",
+      "bn_mt",
+      "gated",
+      "no",
+      4
+    ],
+    [
+      "gpt-oss-20b",
+      "bn_mt",
+      "gated",
+      "partial",
+      4
+    ],
+    [
+      "gpt-oss-20b",
+      "bn_mt",
+      "ungated",
+      "full",
+      11
+    ],
+    [
+      "gpt-oss-20b",
+      "bn_mt",
+      "ungated",
+      "no",
+      128
+    ],
+    [
+      "gpt-oss-20b",
+      "bn_mt",
+      "ungated",
+      "partial",
+      2
+    ],
+    [
+      "gpt-oss-20b",
+      "en",
+      "gated",
+      "full",
+      3
+    ],
+    [
+      "gpt-oss-20b",
+      "en",
+      "gated",
+      "no",
+      3
+    ],
+    [
+      "gpt-oss-20b",
+      "en",
+      "gated",
+      "partial",
+      5
+    ],
+    [
+      "gpt-oss-20b",
+      "en",
+      "ungated",
+      "full",
+      66
+    ],
+    [
+      "gpt-oss-20b",
+      "en",
+      "ungated",
+      "no",
+      69
+    ],
+    [
+      "gpt-oss-20b",
+      "en",
+      "ungated",
+      "partial",
+      4
+    ],
+    [
+      "granite-4.2-8b",
+      "banglish_llm",
+      "gated",
+      "full",
+      1
+    ],
+    [
+      "granite-4.2-8b",
+      "banglish_llm",
+      "gated",
+      "no",
+      3
+    ],
+    [
+      "granite-4.2-8b",
+      "banglish_llm",
+      "ungated",
+      "full",
+      1
+    ],
+    [
+      "granite-4.2-8b",
+      "banglish_llm",
+      "ungated",
+      "no",
+      143
+    ],
+    [
+      "granite-4.2-8b",
+      "banglish_llm",
+      "ungated",
+      "partial",
+      1
+    ],
+    [
+      "granite-4.2-8b",
+      "bn_llm",
+      "gated",
+      "full",
+      1
+    ],
+    [
+      "granite-4.2-8b",
+      "bn_llm",
+      "gated",
+      "no",
+      8
+    ],
+    [
+      "granite-4.2-8b",
+      "bn_llm",
+      "gated",
+      "partial",
+      2
+    ],
+    [
+      "granite-4.2-8b",
+      "bn_llm",
+      "ungated",
+      "full",
+      7
+    ],
+    [
+      "granite-4.2-8b",
+      "bn_llm",
+      "ungated",
+      "no",
+      131
+    ],
+    [
+      "granite-4.2-8b",
+      "bn_mt",
+      "gated",
+      "full",
+      1
+    ],
+    [
+      "granite-4.2-8b",
+      "bn_mt",
+      "gated",
+      "no",
+      6
+    ],
+    [
+      "granite-4.2-8b",
+      "bn_mt",
+      "gated",
+      "partial",
+      4
+    ],
+    [
+      "granite-4.2-8b",
+      "bn_mt",
+      "ungated",
+      "full",
+      4
+    ],
+    [
+      "granite-4.2-8b",
+      "bn_mt",
+      "ungated",
+      "no",
+      133
+    ],
+    [
+      "granite-4.2-8b",
+      "bn_mt",
+      "ungated",
+      "partial",
+      1
+    ],
+    [
+      "granite-4.2-8b",
+      "en",
+      "gated",
+      "full",
+      18
+    ],
+    [
+      "granite-4.2-8b",
+      "en",
+      "gated",
+      "no",
+      3
+    ],
+    [
+      "granite-4.2-8b",
+      "en",
+      "gated",
+      "partial",
+      11
+    ],
+    [
+      "granite-4.2-8b",
+      "en",
+      "ungated",
+      "full",
+      84
+    ],
+    [
+      "granite-4.2-8b",
+      "en",
+      "ungated",
+      "no",
+      29
+    ],
+    [
+      "granite-4.2-8b",
+      "en",
+      "ungated",
+      "partial",
+      3
+    ],
+    [
+      "ministral-3-14b",
+      "banglish_llm",
+      "gated",
+      "full",
+      1
+    ],
+    [
+      "ministral-3-14b",
+      "banglish_llm",
+      "gated",
+      "no",
+      2
+    ],
+    [
+      "ministral-3-14b",
+      "banglish_llm",
+      "gated",
+      "partial",
+      1
+    ],
+    [
+      "ministral-3-14b",
+      "banglish_llm",
+      "ungated",
+      "full",
+      15
+    ],
+    [
+      "ministral-3-14b",
+      "banglish_llm",
+      "ungated",
+      "no",
+      130
+    ],
+    [
+      "ministral-3-14b",
+      "banglish_llm",
+      "ungated",
+      "partial",
+      1
+    ],
+    [
+      "ministral-3-14b",
+      "bn_llm",
+      "gated",
+      "full",
+      2
+    ],
+    [
+      "ministral-3-14b",
+      "bn_llm",
+      "gated",
+      "no",
+      3
+    ],
+    [
+      "ministral-3-14b",
+      "bn_llm",
+      "gated",
+      "partial",
+      1
+    ],
+    [
+      "ministral-3-14b",
+      "bn_llm",
+      "ungated",
+      "full",
+      13
+    ],
+    [
+      "ministral-3-14b",
+      "bn_llm",
+      "ungated",
+      "no",
+      129
+    ],
+    [
+      "ministral-3-14b",
+      "bn_llm",
+      "ungated",
+      "partial",
+      2
+    ],
+    [
+      "ministral-3-14b",
+      "bn_mt",
+      "gated",
+      "full",
+      3
+    ],
+    [
+      "ministral-3-14b",
+      "bn_mt",
+      "gated",
+      "no",
+      4
+    ],
+    [
+      "ministral-3-14b",
+      "bn_mt",
+      "gated",
+      "partial",
+      5
+    ],
+    [
+      "ministral-3-14b",
+      "bn_mt",
+      "ungated",
+      "full",
+      11
+    ],
+    [
+      "ministral-3-14b",
+      "bn_mt",
+      "ungated",
+      "no",
+      126
+    ],
+    [
+      "ministral-3-14b",
+      "bn_mt",
+      "ungated",
+      "partial",
+      1
+    ],
+    [
+      "ministral-3-14b",
+      "en",
+      "gated",
+      "full",
+      10
+    ],
+    [
+      "ministral-3-14b",
+      "en",
+      "gated",
+      "no",
+      1
+    ],
+    [
+      "ministral-3-14b",
+      "en",
+      "gated",
+      "partial",
+      2
+    ],
+    [
+      "ministral-3-14b",
+      "en",
+      "ungated",
+      "full",
+      64
+    ],
+    [
+      "ministral-3-14b",
+      "en",
+      "ungated",
+      "no",
+      69
+    ],
+    [
+      "ministral-3-14b",
+      "en",
+      "ungated",
+      "partial",
+      3
+    ]
+  ],
+  "est_session_h": {
+    "gated": 0.49,
+    "all": 2.12,
+    "all_worst": 4.31
+  },
+  "session_started": "2026-10-06T18:23:52",
+  "session_ended": "2026-10-06T19:49:55",
+  "wall_s": 5163.6
+}

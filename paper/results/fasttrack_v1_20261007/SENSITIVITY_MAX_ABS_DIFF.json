@@ -1,0 +1,34 @@
+{
+ "sensitivity_model_error_excluded": {
+  "asr": {
+   "max_abs_diff": 0.0006263982102907989,
+   "at": [
+    "gemma-4-26b-a4b",
+    "bn_llm"
+   ]
+  },
+  "contrast_pp": {
+   "max_abs_diff": 0.4832214765100673,
+   "at": [
+    "gemma-4-26b-a4b",
+    "C3"
+   ]
+  }
+ },
+ "sensitivity_overflow_episode_level": {
+  "asr": {
+   "max_abs_diff": 0.00031743152548530107,
+   "at": [
+    "granite-4.2-8b",
+    "bn_llm"
+   ]
+  },
+  "contrast_pp": {
+   "max_abs_diff": 0.00906947215672016,
+   "at": [
+    "granite-4.2-8b",
+    "C1"
+   ]
+  }
+ }
+}

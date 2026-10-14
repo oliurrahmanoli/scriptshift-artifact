@@ -1,0 +1,55 @@
+{
+  "_comment": [
+    "Layer-3 judge config (checklist S5, DECISIONS D23). Copy to judge_config.json and edit.",
+    "Rubric = scoring/judge.py JUDGE_PROMPT (unchanged); every judge record stores its SHA-256.",
+    "Cross-vendor rule (plan 10.3 / 11.10): Qwen judges Google episodes (Gemini, Gemma); Gemini judges all others.",
+    "${VAR} is expanded from the environment. Never put OpenRouter / api.openai.com / api.mistral.ai here (refused).",
+    "ASSUMED: Vertex model id 'google/gemini-3.8-flash'; llama-server accepts per-request chat_template_kwargs (b11344).",
+    "deepseek_api is an optional alternative judge for Google episodes (plan 11.5) and costs money: the authors' call."
+  ],
+  "judges": {
+    "qwen_kaggle": {
+      "backend": "openai_compat",
+      "base_url": "http://127.0.0.1:8099/v1",
+      "model": "auto",
+      "vendor": "alibaba",
+      "temperature": 0,
+      "max_tokens": 256,
+      "seed": 20261002,
+      "extra_body": {"chat_template_kwargs": {"enable_thinking": false}}
+    },
+    "gemini_vertex": {
+      "backend": "openai_compat",
+      "base_url": "https://${GCP_LOCATION}-aiplatform.googleapis.com/v1/projects/${GCP_PROJECT}/locations/${GCP_LOCATION}/endpoints/openapi",
+      "model": "google/gemini-3.8-flash",
+      "api_key_env": "GCP_ACCESS_TOKEN",
+      "vendor": "google",
+      "temperature": 0,
+      "max_tokens": 256
+    },
+    "deepseek_api": {
+      "backend": "openai_compat",
+      "base_url": "https://api.deepseek.com/v1",
+      "model": "deepseek-v4-pro",
+      "api_key_env": "DEEPSEEK_API_KEY",
+      "vendor": "deepseek",
+      "temperature": 0,
+      "max_tokens": 256
+    },
+    "stub": {"backend": "stub", "vendor": null}
+  },
+  "vendor_of_model": {
+    "_comment_": "exact label or case-insensitive prefix of the agent model label",
+    "gemini": "google",
+    "gemma": "google",
+    "qwen": "alibaba",
+    "gpt-oss": "openai",
+    "ministral": "mistral",
+    "granite": "ibm",
+    "deepseek": "deepseek"
+  },
+  "routing": {
+    "by_agent_vendor": {"google": "qwen_kaggle"},
+    "default": "gemini_vertex"
+  }
+}

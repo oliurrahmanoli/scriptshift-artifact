@@ -1,0 +1,10 @@
+condition,n_items,n_filled,n_todo,mean_chars,mean_bengali_share,mean_latin_token_share,wrapper_filled,n_rated_items,fidelity_pass_both,adequacy_mean,naturalness_mean,kappa_fidelity,kappa_fidelity_lo,kappa_fidelity_hi,kappa_register,kappa_register_lo,kappa_register_hi,alpha_adequacy,alpha_adequacy_lo,alpha_adequacy_hi,alpha_naturalness,alpha_naturalness_lo,alpha_naturalness_hi,synthetic
+en,35,35,0,193.77142857142857,0.0,0.9284556593333152,True,,,,,,,,,,,,,,,,,False
+bn_mt,35,35,0,190.54285714285714,0.7698041762209638,0.048413001564262065,True,35.0,0.8285714285714286,3.6285714285714286,3.6285714285714286,-0.08247422680412253,-0.14579169175195586,0.0,1.0,1.0,1.0,0.9101790122586014,0.7920858370012126,0.9721089628606128,0.9101790122586014,0.7920858370012126,0.9721089628606128,False
+bn_llm,35,0,35,,,,True,,,,,,,,,,,,,,,,,False
+banglish_llm,35,0,35,,,,True,,,,,,,,,,,,,,,,,False
+banglish_translit,35,0,35,,,,False,,,,,,,,,,,,,,,,,False
+codemix_llm,35,0,35,,,,True,,,,,,,,,,,,,,,,,False
+en_W2,35,35,0,193.77142857142857,0.0,0.9284556593333152,True,,,,,,,,,,,,,,,,,False
+bn_llm_W2,35,0,35,,,,True,,,,,,,,,,,,,,,,,False
+banglish_llm_W2,35,0,35,,,,True,,,,,,,,,,,,,,,,,False

@@ -1,0 +1,51 @@
+{
+  "synthetic": false,
+  "metric_used": "normalised_security",
+  "n_episodes": 3485,
+  "label": "fasttrack_v1_sens_overflow_episode",
+  "rules": {
+    "model_error_rule": "failure",
+    "overflow_rule": "episode",
+    "self_generated_models": [
+      "gemma-4-26b-a4b"
+    ]
+  },
+  "code_git_commit": "5045e44eb1f11f65d59ff03453e676dba4cb8a16",
+  "input_sha256": {
+    "results/main/gemma/runs/gemma_150.jsonl": "5bd112c96673fba80bf60a7876a9b2392373760e8c17a16a1b95773e6236518a",
+    "results/main/gptoss/runs/gptoss_150.jsonl": "1dab2319f4e4b88a828a302b5e0e7def22963f789390765b40a42237212aeaf2",
+    "results/main/granite/runs/granite_150.jsonl": "92e4afe019996353b59120c0c7ffd62e772d088af19745e77e8cf54399508404",
+    "results/main/ministral/runs/ministral_150.jsonl": "a6066858ed4e2c990da9507140e41c2307680357e5fa698244c3e82ce7fbb863",
+    "results/main/qwen/runs/qwen_150.jsonl": "0f5749a449a85a8ab33a2b4a13e6b170d01466e01c544623fa233a8b04579b56"
+  },
+  "python_packages": {
+    "numpy": "2.5.3",
+    "scipy": "1.18.1",
+    "pandas": "3.0.6",
+    "statsmodels": "0.15.0",
+    "matplotlib": "3.11.2"
+  },
+  "raw_mismatch_trace_vs_score": 0,
+  "inputs": {
+    "traces": [
+      "results/main/gemma/runs/traces",
+      "results/main/gptoss/runs/traces",
+      "results/main/granite/runs/traces",
+      "results/main/ministral/runs/traces",
+      "results/main/qwen/runs/traces"
+    ],
+    "scores": [
+      "results/main/gemma/runs/gemma_150.jsonl",
+      "results/main/gptoss/runs/gptoss_150.jsonl",
+      "results/main/granite/runs/granite_150.jsonl",
+      "results/main/ministral/runs/ministral_150.jsonl",
+      "results/main/qwen/runs/qwen_150.jsonl"
+    ],
+    "judge": [],
+    "probe": null,
+    "detectors": null
+  },
+  "n_boot": 10000,
+  "seed": 20261002
+}
+wrote 26 artefacts to <repo>/paper/results/fasttrack_v1_20261007/sensitivity_overflow_episode_level

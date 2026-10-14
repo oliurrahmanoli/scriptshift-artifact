@@ -1,0 +1,16 @@
+{
+  "runs_root": "/kaggle/working/runs",
+  "models": {
+    "gemma-4-26b-a4b": {
+      "n_json": 37,
+      "bytes": 253605,
+      "sample": [
+        "gemma-4-26b-a4b/slack/user_task_0/none/none.json",
+        "gemma-4-26b-a4b/slack/user_task_1/none/none.json",
+        "gemma-4-26b-a4b/slack/user_task_12/none/none.json",
+        "gemma-4-26b-a4b/slack/user_task_17/none/none.json",
+        "gemma-4-26b-a4b/slack/user_task_6/none/none.json"
+      ]
+    }
+  }
+}

@@ -1,0 +1,213 @@
+{
+  "run_id": "judge_gemma",
+  "judge_id": "gemma_kaggle",
+  "judge_model": "gemma-4-26b-a4b",
+  "scope": "all",
+  "smoke_n": null,
+  "gguf": {
+    "repo": "google/gemma-4-26B-A4B-it-qat-q4_0-gguf",
+    "rev": "d1c082be9cf3c8a514acf63b8761f4b41935842e",
+    "file": "gemma-4-26B_q4_0-it.gguf",
+    "size": 14439363584,
+    "sha256": "3eca3b8f6d7baf218a7dd6bba5fb59a56ee25fe2d567b6f5f589b4f697eca51d"
+  },
+  "serve": {
+    "layout": "tensor_split",
+    "variant": "swa_full+no_think",
+    "ports": [
+      8099
+    ],
+    "model_id": "/tmp/models/gemma-4-26B_q4_0-it.gguf",
+    "servers": [
+      {
+        "port": 8099,
+        "gpu": "0,1",
+        "cmd": [
+          "-m",
+          "/tmp/models/gemma-4-26B_q4_0-it.gguf",
+          "--host",
+          "127.0.0.1",
+          "-ngl",
+          "99",
+          "-c",
+          "24576",
+          "-np",
+          "1",
+          "--jinja",
+          "--temp",
+          "0",
+          "--seed",
+          "20261002",
+          "--port",
+          "8099",
+          "--tensor-split",
+          "1,1",
+          "--swa-full",
+          "--chat-template-kwargs",
+          "{\"enable_thinking\":false}"
+        ],
+        "log": "/kaggle/working/server_8099.log"
+      }
+    ],
+    "template_ok": true,
+    "template_tails": {
+      "8099": "<|turn>user\nping<turn|>\n<|turn>model\n<|channel>thought\n<channel|>"
+    }
+  },
+  "llama_build": "b11344",
+  "seed": 20261002,
+  "rubric_sha256": "0e76965e5325c8711966d682cb11724ce56a5261ff43d2a81cb80093b45ed88d",
+  "embed": {
+    "sha256": "ddeaeac552c60d00b34b9f74a46ec9b703f976b5033496ea08ac58571ad7f5f6",
+    "bytes": 127112
+  },
+  "inputs_sha256": "93f6f1c801ee541dd1ae10195fb6c8895beecf9fdfc6b2aebdb9476ac6707f66",
+  "resume_seeded": null,
+  "run_judge_summary": {
+    "selected": 600,
+    "gated": 21,
+    "already_done": 0,
+    "to_judge": 600,
+    "to_judge_gated": 21,
+    "skipped_other_judge": 0,
+    "missing_trace": 0,
+    "by_judge": {
+      "gemma_kaggle": 600
+    },
+    "rubric_sha256": "0e76965e5325c8711966d682cb11724ce56a5261ff43d2a81cb80093b45ed88d",
+    "judged": 600,
+    "stopped_at_deadline": false
+  },
+  "summary": {
+    "judged": 600,
+    "gated_done": 21,
+    "gated_total": 21,
+    "all_done": 600,
+    "all_total": 600,
+    "complete_gated": true,
+    "complete_all": true,
+    "verdicts": {
+      "full": 118,
+      "no": 482
+    },
+    "full_on_gated": 7,
+    "unparseable": 0,
+    "finish_length": 0,
+    "latency_s_median": 1.352
+  },
+  "tally": [
+    [
+      "qwen3.6-35b-a3b",
+      "banglish_llm",
+      "gated",
+      "full",
+      2
+    ],
+    [
+      "qwen3.6-35b-a3b",
+      "banglish_llm",
+      "gated",
+      "no",
+      3
+    ],
+    [
+      "qwen3.6-35b-a3b",
+      "banglish_llm",
+      "ungated",
+      "full",
+      29
+    ],
+    [
+      "qwen3.6-35b-a3b",
+      "banglish_llm",
+      "ungated",
+      "no",
+      116
+    ],
+    [
+      "qwen3.6-35b-a3b",
+      "bn_llm",
+      "gated",
+      "no",
+      2
+    ],
+    [
+      "qwen3.6-35b-a3b",
+      "bn_llm",
+      "ungated",
+      "full",
+      16
+    ],
+    [
+      "qwen3.6-35b-a3b",
+      "bn_llm",
+      "ungated",
+      "no",
+      132
+    ],
+    [
+      "qwen3.6-35b-a3b",
+      "bn_mt",
+      "gated",
+      "full",
+      1
+    ],
+    [
+      "qwen3.6-35b-a3b",
+      "bn_mt",
+      "gated",
+      "no",
+      8
+    ],
+    [
+      "qwen3.6-35b-a3b",
+      "bn_mt",
+      "ungated",
+      "full",
+      16
+    ],
+    [
+      "qwen3.6-35b-a3b",
+      "bn_mt",
+      "ungated",
+      "no",
+      125
+    ],
+    [
+      "qwen3.6-35b-a3b",
+      "en",
+      "gated",
+      "full",
+      4
+    ],
+    [
+      "qwen3.6-35b-a3b",
+      "en",
+      "gated",
+      "no",
+      1
+    ],
+    [
+      "qwen3.6-35b-a3b",
+      "en",
+      "ungated",
+      "full",
+      50
+    ],
+    [
+      "qwen3.6-35b-a3b",
+      "en",
+      "ungated",
+      "no",
+      95
+    ]
+  ],
+  "est_session_h": {
+    "gated": 0.38,
+    "all": 0.75,
+    "all_worst": 1.35
+  },
+  "session_started": "2026-10-06T18:51:31",
+  "session_ended": "2026-10-06T19:10:36",
+  "wall_s": 1145.6
+}

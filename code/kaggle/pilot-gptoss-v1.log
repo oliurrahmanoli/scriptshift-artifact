@@ -1,0 +1,215 @@
+7.4s 1 0.00s - Debugger warning: It seems that frozen modules are being used, which may
+7.4s 2 0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off
+7.4s 3 0.00s - to python to disable frozen modules.
+7.4s 4 0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.
+8.1s 5 0.00s - Debugger warning: It seems that frozen modules are being used, which may
+8.1s 6 0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off
+8.1s 7 0.00s - to python to disable frozen modules.
+8.1s 8 0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.
+9.3s 9 gpt-oss-20b: ggml-org/gpt-oss-20b-GGUF@ef9b12f2ff56 / gpt-oss-20b-MXFP4.gguf  replicas=2
+9.3s 10 index, name, memory.total [MiB]
+9.3s 11 0, Tesla T4, 15360 MiB
+9.3s 12 1, Tesla T4, 15360 MiB
+9.3s 13 
+9.3s 14 GPUs visible: 2
+32.2s 15 llama-server at /kaggle/working/llama/llama-b11344/llama-server
+32.3s 16 version: 0.5.0-dev (build 11344, commit ec7630a64)
+32.3s 17 built with GNU 13.3.0 for Linux x86_64
+32.3s 18 
+34.8s 19 [?25l     [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m0.0/44.3 kB[0m [31m?[0m eta [36m-:--:--[0m[2K     [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m44.3/44.3 kB[0m [31m1.7 MB/s[0m eta [36m0:00:00[0m
+36.5s 20 [?25h[?25l   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m0.0/192.4 kB[0m [31m?[0m eta [36m-:--:--[0m[2K   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m192.4/192.4 kB[0m [31m6.9 MB/s[0m eta [36m0:00:00[0m
+36.6s 21 [?25h[?25l   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m0.0/2.1 MB[0m [31m?[0m eta [36m-:--:--[0m[2K   [91m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m[91m╸[0m [32m2.1/2.1 MB[0m [31m80.8 MB/s[0m eta [36m0:00:01[0m[2K   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m2.1/2.1 MB[0m [31m31.5 MB/s[0m eta [36m0:00:00[0m
+36.6s 22 [?25h[?25l   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m0.0/1.7 MB[0m [31m?[0m eta [36m-:--:--[0m[2K   [91m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m[91m╸[0m [32m1.7/1.7 MB[0m [31m237.4 MB/s[0m eta [36m0:00:01[0m[2K   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m1.7/1.7 MB[0m [31m46.8 MB/s[0m eta [36m0:00:00[0m
+36.7s 23 [?25h[?25l   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m0.0/370.7 kB[0m [31m?[0m eta [36m-:--:--[0m[2K   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m370.7/370.7 kB[0m [31m11.1 MB/s[0m eta [36m0:00:00[0m
+36.7s 24 [?25h[?25l   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m0.0/345.0 kB[0m [31m?[0m eta [36m-:--:--[0m[2K   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m345.0/345.0 kB[0m [31m13.1 MB/s[0m eta [36m0:00:00[0m
+36.8s 25 [?25h[?25l   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m0.0/3.6 MB[0m [31m?[0m eta [36m-:--:--[0m[2K   [91m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m[91m╸[0m [32m3.6/3.6 MB[0m [31m118.8 MB/s[0m eta [36m0:00:01[0m[2K   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m3.6/3.6 MB[0m [31m64.1 MB/s[0m eta [36m0:00:00[0m
+46.0s 26 [?25h[31mERROR: pip's dependency resolver does not currently take into account all the packages that are installed. This behaviour is the source of the following dependency conflicts.
+46.0s 27 litellm 1.85.7 requires openai<3.0.0,>=2.20.0, but you have openai 3.23.0 which is incompatible.[0m[31m
+46.2s 28 [0mremoved from /kaggle/working/models: (nothing)
+46.2s 29 Filesystem      Size  Used Avail Use% Mounted on
+46.2s 30 /dev/loop2       20G  1.8G   18G   9% /kaggle/working
+46.2s 31 overlay         8.0T  7.0T  1.1T  87% /
+46.2s 32 
+47.1s 33 MODELS_DIR=/tmp/models  free=1069.8 GiB
+47.1s 34 downloading ggml-org/gpt-oss-20b-GGUF/gpt-oss-20b-MXFP4.gguf @ ef9b12f2ff56 ...
+47.8s 35 Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+47.8s 36 
+47.8s 37 Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+105.5s 38 gpt-oss-20b -> /tmp/models/gpt-oss-20b-MXFP4.gguf  11.28 GiB  (58s)
+142.1s 39 sha256 27cd6c432c7672cb812a92f611cf3ba7bbc35928262bb1e1253ff4ee6ae35901  match=True
+153.7s 40 serve[low_effort_kwargs] replica 0 GPU 0: -m /tmp/models/gpt-oss-20b-MXFP4.gguf --host 127.0.0.1 --port 8099 -ngl 99 -c 24576 -np 4 --jinja --temp 0 --seed 20261002 --chat-template-kwargs {"reasoning_effort":"low"}
+225.8s 41 replica 0 up on :8099 (72s)
+225.8s 42 serve[low_effort_kwargs] replica 1 GPU 1: -m /tmp/models/gpt-oss-20b-MXFP4.gguf --host 127.0.0.1 --port 8100 -ngl 99 -c 24576 -np 4 --jinja --temp 0 --seed 20261002 --chat-template-kwargs {"reasoning_effort":"low"}
+231.8s 43 replica 1 up on :8100 (6s)
+231.8s 44 template[8099] tail: '2024-06\nCurrent date: 2026-10-06\n\nReasoning: low\n\n# Valid channels: analysis, commentary, final. Channel must be included for every message.<|end|><|start|>user<|message|>ping<|end|><|start|>assistant'  expect='Reasoning: low' ok=True
+231.8s 45 server up  SERVE_VARIANT=low_effort_kwargs  replicas=2
+231.8s 46 index, memory.used [MiB], memory.total [MiB]
+231.8s 47 0, 11809 MiB, 15360 MiB
+231.8s 48 1, 11815 MiB, 15360 MiB
+231.8s 49 
+232.0s 50 gpt-oss-20b: model id=/tmp/models/gpt-oss-20b-MXFP4.gguf  ports=[8099, 8100]  workers/replica=1
+232.0s 51 gpt-oss-20b: starting banking utility (no attack), 16 tasks over 2 streams...
+343.4s 52 gpt-oss-20b/banking: utility=0.500, n=16, 111s
+343.4s 53 gpt-oss-20b: starting slack utility (no attack), 21 tasks over 2 streams...
+498.0s 54 gpt-oss-20b/slack: utility=0.762, n=21, 155s
+498.0s 55 gpt-oss-20b: utility {'banking': 0.5, 'slack': 0.7619047619047619}, episodes 37, 266s, 500.7 episodes/h
+498.0s 56 gpt-oss-20b: harness errors 0/37
+498.0s 57 gpt-oss-20b: traces under /kaggle/working/runs/gpt-oss-20b: 37 json files
+504.8s 58 gpt-oss-20b: servers stopped
+504.8s 59 gpt-oss-20b: parse-errors 0/37 = 0.0%  (within §11.8 5% replacement rule)
+504.8s 60 gpt-oss-20b: tool stats {'episodes': 37, 'zero_tool_episodes': 2, 'tool_calls_min_median_max': [0, 3, 16], 'messages_min_median_max': [3, 9, 33], 'episode_seconds_median': 7.349688768386841}
+504.9s 61 runs root exists=True
+504.9s 62 gpt-oss-20b: 37 json, 237.8 KiB
+504.9s 63 e.g. gpt-oss-20b/slack/user_task_12/none/none.json
+504.9s 64 e.g. gpt-oss-20b/slack/user_task_7/none/none.json
+504.9s 65 e.g. gpt-oss-20b/slack/user_task_1/none/none.json
+504.9s 66 wrote /kaggle/working/runs_manifest.json (438 bytes)
+504.9s 67 /kaggle/working top-level:
+504.9s 68 file __notebook__.ipynb
+504.9s 69 dir llama
+504.9s 70 dir runs
+504.9s 71 file runs_manifest.json
+504.9s 72 file server_8099_low_effort_kwargs.log
+504.9s 73 file server_8100_low_effort_kwargs.log
+504.9s 74 {
+504.9s 75 "label": "gpt-oss-20b",
+504.9s 76 "model_id": "/tmp/models/gpt-oss-20b-MXFP4.gguf",
+504.9s 77 "utility": {
+504.9s 78 "banking": 0.5,
+504.9s 79 "slack": 0.7619047619047619
+504.9s 80 },
+504.9s 81 "n": {
+504.9s 82 "banking": 16,
+504.9s 83 "slack": 21
+504.9s 84 },
+504.9s 85 "suite_seconds": {
+504.9s 86 "banking": 111.4103729724884,
+504.9s 87 "slack": 154.60845708847046
+504.9s 88 },
+504.9s 89 "episodes": 37,
+504.9s 90 "wall_s": 266.01883006095886,
+504.9s 91 "eps_per_h": 500.7164341316624,
+504.9s 92 "streams": 2,
+504.9s 93 "workers_per_replica": 1,
+504.9s 94 "replicas": 2,
+504.9s 95 "harness_errors": [],
+504.9s 96 "parse_error_rate": 0.0,
+504.9s 97 "tool_stats": {
+504.9s 98 "episodes": 37,
+504.9s 99 "zero_tool_episodes": 2,
+504.9s 100 "tool_calls_min_median_max": [
+504.9s 101 0,
+504.9s 102 3,
+504.9s 103 16
+504.9s 104 ],
+504.9s 105 "messages_min_median_max": [
+504.9s 106 3,
+504.9s 107 9,
+504.9s 108 33
+504.9s 109 ],
+504.9s 110 "episode_seconds_median": 7.349688768386841
+504.9s 111 },
+504.9s 112 "serve": {
+504.9s 113 "variant": "low_effort_kwargs",
+504.9s 114 "layout": "2x replica (1 per T4)",
+504.9s 115 "ctx": 24576,
+504.9s 116 "n_slots": 4,
+504.9s 117 "replicas": [
+504.9s 118 {
+504.9s 119 "replica": 0,
+504.9s 120 "gpu": 0,
+504.9s 121 "port": 8099,
+504.9s 122 "cmd": [
+504.9s 123 "-m",
+504.9s 124 "/tmp/models/gpt-oss-20b-MXFP4.gguf",
+504.9s 125 "--host",
+504.9s 126 "127.0.0.1",
+504.9s 127 "--port",
+504.9s 128 "8099",
+504.9s 129 "-ngl",
+504.9s 130 "99",
+504.9s 131 "-c",
+504.9s 132 "24576",
+504.9s 133 "-np",
+504.9s 134 "4",
+504.9s 135 "--jinja",
+504.9s 136 "--temp",
+504.9s 137 "0",
+504.9s 138 "--seed",
+504.9s 139 "20261002",
+504.9s 140 "--chat-template-kwargs",
+504.9s 141 "{\"reasoning_effort\":\"low\"}"
+504.9s 142 ],
+504.9s 143 "log": "/kaggle/working/server_8099_low_effort_kwargs.log"
+504.9s 144 },
+504.9s 145 {
+504.9s 146 "replica": 1,
+504.9s 147 "gpu": 1,
+504.9s 148 "port": 8100,
+504.9s 149 "cmd": [
+504.9s 150 "-m",
+504.9s 151 "/tmp/models/gpt-oss-20b-MXFP4.gguf",
+504.9s 152 "--host",
+504.9s 153 "127.0.0.1",
+504.9s 154 "--port",
+504.9s 155 "8100",
+504.9s 156 "-ngl",
+504.9s 157 "99",
+504.9s 158 "-c",
+504.9s 159 "24576",
+504.9s 160 "-np",
+504.9s 161 "4",
+504.9s 162 "--jinja",
+504.9s 163 "--temp",
+504.9s 164 "0",
+504.9s 165 "--seed",
+504.9s 166 "20261002",
+504.9s 167 "--chat-template-kwargs",
+504.9s 168 "{\"reasoning_effort\":\"low\"}"
+504.9s 169 ],
+504.9s 170 "log": "/kaggle/working/server_8100_low_effort_kwargs.log"
+504.9s 171 }
+504.9s 172 ],
+504.9s 173 "template_ok": true,
+504.9s 174 "template_tail": "<|start|>system<|message|>You are ChatGPT, a large language model trained by OpenAI.\nKnowledge cutoff: 2024-06\nCurrent date: 2026-10-06\n\nReasoning: low\n\n# Valid channels: analysis, commentary, final. Channel must be included for every message.<|end|><|start|>user<|message|>ping<|end|><|start|>assistant"
+504.9s 175 },
+504.9s 176 "gguf": {
+504.9s 177 "repo": "ggml-org/gpt-oss-20b-GGUF",
+504.9s 178 "rev": "ef9b12f2ff56c69cf32153a02784e7a3c88bf524",
+504.9s 179 "file": "gpt-oss-20b-MXFP4.gguf",
+504.9s 180 "size": 12109566624,
+504.9s 181 "sha256": "27cd6c432c7672cb812a92f611cf3ba7bbc35928262bb1e1253ff4ee6ae35901"
+504.9s 182 },
+504.9s 183 "llama_build": "b11344",
+504.9s 184 "rule": {
+504.9s 185 "keep_eps_per_h": 64.0,
+504.9s 186 "util_min": 0.2,
+504.9s 187 "parse_max": 0.05
+504.9s 188 },
+504.9s 189 "checks": {
+504.9s 190 "eph_ok": true,
+504.9s 191 "util_ok": true,
+504.9s 192 "parse_ok": true,
+504.9s 193 "harness_ok": true,
+504.9s 194 "layout_ok": true,
+504.9s 195 "template_ok": true,
+504.9s 196 "tools_ok": true
+504.9s 197 },
+504.9s 198 "verdict": "KEEP",
+504.9s 199 "main_grid_hours_x1_10": 4.167428623785307,
+504.9s 200 "assumed": [
+504.9s 201 "HF repo ggml-org/gpt-oss-20b-GGUF (OpenAI ships no official GGUF)"
+504.9s 202 ],
+504.9s 203 "concurrency_probe": null,
+504.9s 204 "thinking_on_ablation": null
+504.9s 205 }
+504.9s 206 PILOT_RESULT model=gpt-oss-20b eps_per_h=500.7 banking=0.500 slack=0.762 parse=0.0% harness_err=0 variant=low_effort_kwargs layout=2x_replica_(1_per_T4) template_ok=True grid_h=4.2 verdict=KEEP
+504.9s 207 wrote /kaggle/working/gpt-oss-20b_pilot_result.json
+509.1s 208 /usr/local/lib/python3.13/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\|'
+509.1s 209 cells[i][c] = re.sub('\\\\\|', '|', cell)
+509.3s 210 /usr/local/lib/python3.13/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\_'
+509.3s 211 text = re.sub(r'_', '\_', text) # Escape underscores in display text
+510.1s 212 [NbConvertApp] Converting notebook __notebook__.ipynb to notebook
+510.2s 213 [NbConvertApp] Writing 79973 bytes to __notebook__.ipynb
+513.2s 214 [NbConvertApp] Converting notebook __notebook__.ipynb to html
+513.9s 215 [NbConvertApp] Writing 448494 bytes to __results__.html

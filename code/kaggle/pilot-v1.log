@@ -1,0 +1,67 @@
+6.8s 1 0.00s - Debugger warning: It seems that frozen modules are being used, which may
+6.8s 2 0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off
+6.8s 3 0.00s - to python to disable frozen modules.
+6.8s 4 0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.
+7.4s 5 0.00s - Debugger warning: It seems that frozen modules are being used, which may
+7.4s 6 0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off
+7.4s 7 0.00s - to python to disable frozen modules.
+7.4s 8 0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.
+8.5s 9 name, memory.total [MiB]
+8.5s 10 Tesla T4, 15360 MiB
+8.5s 11 Tesla T4, 15360 MiB
+8.5s 12 
+28.6s 13 llama-server at /kaggle/working/llama/llama-b11344/llama-server
+28.6s 14 version: 0.5.0-dev (build 11344, commit ec7630a64)
+28.6s 15 built with GNU 13.3.0 for Linux x86_64
+28.6s 16 
+31.0s 17 [?25l     [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m0.0/44.3 kB[0m [31m?[0m eta [36m-:--:--[0m[2K     [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m44.3/44.3 kB[0m [31m1.2 MB/s[0m eta [36m0:00:00[0m
+32.9s 18 [?25h[?25l   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m0.0/192.4 kB[0m [31m?[0m eta [36m-:--:--[0m[2K   [91m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m[90m╺[0m[90m━[0m [32m184.3/192.4 kB[0m [31m14.5 MB/s[0m eta [36m0:00:01[0m[2K   [91m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m[90m╺[0m[90m━[0m [32m184.3/192.4 kB[0m [31m14.5 MB/s[0m eta [36m0:00:01[0m[2K   [91m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m[90m╺[0m[90m━[0m [32m184.3/192.4 kB[0m [31m14.5 MB/s[0m eta [36m0:00:01[0m[2K   [91m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m[90m╺[0m[90m━[0m [32m184.3/192.4 kB[0m [31m14.5 MB/s[0m eta [36m0:00:01[0m[2K   [91m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m[90m╺[0m[90m━[0m [32m184.3/192.4 kB[0m [31m14.5 MB/s[0m eta [36m0:00:01[0m[2K   [91m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m[90m╺[0m[90m━[0m [32m184.3/192.4 kB[0m [31m14.5 MB/s[0m eta [36m0:00:01[0m[2K   [91m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m[90m╺[0m[90m━[0m [32m184.3/192.4 kB[0m [31m14.5 MB/s[0m eta [36m0:00:01[0m[2K   [91m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m[90m╺[0m[90m━[0m [32m184.3/192.4 kB[0m [31m14.5 MB/s[0m eta [36m0:00:01[0m[2K   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m192.4/192.4 kB[0m [31m629.1 kB/s[0m eta [36m0:00:00[0m
+33.0s 19 [?25h[?25l   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m0.0/2.1 MB[0m [31m?[0m eta [36m-:--:--[0m[2K   [91m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m[91m╸[0m [32m2.1/2.1 MB[0m [31m63.6 MB/s[0m eta [36m0:00:01[0m[2K   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m2.1/2.1 MB[0m [31m37.0 MB/s[0m eta [36m0:00:00[0m
+33.1s 20 [?25h[?25l   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m0.0/1.7 MB[0m [31m?[0m eta [36m-:--:--[0m[2K   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m1.7/1.7 MB[0m [31m53.5 MB/s[0m eta [36m0:00:00[0m
+33.1s 21 [?25h[?25l   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m0.0/370.7 kB[0m [31m?[0m eta [36m-:--:--[0m[2K   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m370.7/370.7 kB[0m [31m14.9 MB/s[0m eta [36m0:00:00[0m
+33.1s 22 [?25h[?25l   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m0.0/345.0 kB[0m [31m?[0m eta [36m-:--:--[0m[2K   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m345.0/345.0 kB[0m [31m16.7 MB/s[0m eta [36m0:00:00[0m
+33.2s 23 [?25h[?25l   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m0.0/3.4 MB[0m [31m?[0m eta [36m-:--:--[0m[2K   [91m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m[91m╸[0m [32m3.4/3.4 MB[0m [31m247.2 MB/s[0m eta [36m0:00:01[0m[2K   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m3.4/3.4 MB[0m [31m93.7 MB/s[0m eta [36m0:00:00[0m
+41.4s 24 [?25h[31mERROR: pip's dependency resolver does not currently take into account all the packages that are installed. This behaviour is the source of the following dependency conflicts.
+41.4s 25 litellm 1.85.7 requires openai<3.0.0,>=2.20.0, but you have openai 3.23.0 which is incompatible.[0m[31m
+41.6s 26 [0mremoved from /kaggle/working/models: (nothing)
+41.6s 27 Filesystem      Size  Used Avail Use% Mounted on
+41.6s 28 /dev/loop2       20G  1.8G   18G   9% /kaggle/working
+41.6s 29 overlay         8.0T  7.0T  1.1T  87% /
+41.6s 30 
+42.6s 31 MODELS_DIR=/tmp/models  free=1069.8 GiB
+42.6s 32 Filesystem      Size  Used Avail Use% Mounted on
+42.6s 33 overlay         8.0T  7.0T  1.1T  87% /
+42.6s 34 /dev/loop2       20G  1.8G   18G   9% /kaggle/working
+42.6s 35 
+82.6s 36 Granite -> /tmp/models/granite-4.2-8b-Q4_K_M.gguf
+192.7s 37 Qwen -> /tmp/models/Qwen3.6-35B-A3B-Q4_K_M.gguf
+211.4s 38 /tmp/models/granite-4.2-8b-Q4_K_M.gguf 4.98 GiB 16a9369d0805f80b
+291.5s 39 /tmp/models/Qwen3.6-35B-A3B-Q4_K_M.gguf 19.02 GiB 671e47e0ec53c665
+298.0s 40 granite-4.2-8b: loading weights / starting llama-server...
+362.2s 41 server up
+362.2s 42 granite-4.2-8b: model id=/tmp/models/granite-4.2-8b-Q4_K_M.gguf
+362.2s 43 granite-4.2-8b: starting banking utility (no attack)...
+2051.3s 44 granite-4.2-8b/banking: utility=0.875, n=16, 1689s
+2051.3s 45 granite-4.2-8b: starting slack utility (no attack)...
+4591.9s 46 granite-4.2-8b/slack: utility=0.905, n=21, 2541s
+4591.9s 47 granite-4.2-8b: utility {'banking': 0.875, 'slack': 0.9047619047619048}, episodes 37, 4230s, 31.5 episodes/h
+4591.9s 48 granite-4.2-8b: server stopped
+4591.9s 49 qwen3.6-35b-a3b: loading weights / starting llama-server...
+4726.1s 50 server up
+4726.1s 51 qwen3.6-35b-a3b: model id=/tmp/models/Qwen3.6-35B-A3B-Q4_K_M.gguf
+4726.1s 52 qwen3.6-35b-a3b: starting banking utility (no attack)...
+5183.1s 53 qwen3.6-35b-a3b/banking: utility=0.750, n=16, 457s
+5183.1s 54 qwen3.6-35b-a3b: starting slack utility (no attack)...
+5503.1s 55 qwen3.6-35b-a3b/slack: utility=0.952, n=21, 320s
+5503.1s 56 qwen3.6-35b-a3b: utility {'banking': 0.75, 'slack': 0.9523809523809523}, episodes 37, 777s, 171.4 episodes/h
+5503.1s 57 qwen3.6-35b-a3b: server stopped
+5503.2s 58 granite-4.2-8b: 37/37 episodes flagged with a possible tool/parse error
+5503.2s 59 qwen3.6-35b-a3b: 37/37 episodes flagged with a possible tool/parse error
+5508.8s 60 /usr/local/lib/python3.13/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\|'
+5508.8s 61 cells[i][c] = re.sub('\\\\\|', '|', cell)
+5509.1s 62 /usr/local/lib/python3.13/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\_'
+5509.1s 63 text = re.sub(r'_', '\_', text) # Escape underscores in display text
+5510.2s 64 [NbConvertApp] Converting notebook __notebook__.ipynb to notebook
+5510.2s 65 [NbConvertApp] Writing 72988 bytes to __notebook__.ipynb
+5512.7s 66 [NbConvertApp] Converting notebook __notebook__.ipynb to html
+5513.6s 67 [NbConvertApp] Writing 368568 bytes to __results__.html

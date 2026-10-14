@@ -1,0 +1,175 @@
+{
+  "label": "gpt-oss-20b",
+  "model_id": "/tmp/models/gpt-oss-20b-MXFP4.gguf",
+  "utility": {
+    "banking": 0.5,
+    "slack": 0.7619047619047619
+  },
+  "n": {
+    "banking": 16,
+    "slack": 21
+  },
+  "suite_seconds": {
+    "banking": 111.4103729724884,
+    "slack": 154.60845708847046
+  },
+  "episodes": 37,
+  "wall_s": 266.01883006095886,
+  "eps_per_h": 500.7164341316624,
+  "streams": 2,
+  "workers_per_replica": 1,
+  "replicas": 2,
+  "harness_errors": [],
+  "per_task_utility": {
+    "banking": {
+      "user_task_0": true,
+      "user_task_2": true,
+      "user_task_4": false,
+      "user_task_6": true,
+      "user_task_8": true,
+      "user_task_10": true,
+      "user_task_12": false,
+      "user_task_14": false,
+      "user_task_1": false,
+      "user_task_3": false,
+      "user_task_5": true,
+      "user_task_7": true,
+      "user_task_9": false,
+      "user_task_11": false,
+      "user_task_13": true,
+      "user_task_15": false
+    },
+    "slack": {
+      "user_task_0": true,
+      "user_task_2": true,
+      "user_task_4": false,
+      "user_task_6": true,
+      "user_task_8": true,
+      "user_task_10": false,
+      "user_task_12": true,
+      "user_task_14": false,
+      "user_task_16": true,
+      "user_task_18": true,
+      "user_task_20": true,
+      "user_task_1": true,
+      "user_task_3": true,
+      "user_task_5": true,
+      "user_task_7": true,
+      "user_task_9": false,
+      "user_task_11": true,
+      "user_task_13": true,
+      "user_task_15": true,
+      "user_task_17": true,
+      "user_task_19": false
+    }
+  },
+  "parse_error_rate": 0.0,
+  "tool_stats": {
+    "episodes": 37,
+    "zero_tool_episodes": 2,
+    "tool_calls_min_median_max": [
+      0,
+      3,
+      16
+    ],
+    "messages_min_median_max": [
+      3,
+      9,
+      33
+    ],
+    "episode_seconds_median": 7.349688768386841
+  },
+  "serve": {
+    "variant": "low_effort_kwargs",
+    "layout": "2x replica (1 per T4)",
+    "ctx": 24576,
+    "n_slots": 4,
+    "replicas": [
+      {
+        "replica": 0,
+        "gpu": 0,
+        "port": 8099,
+        "cmd": [
+          "-m",
+          "/tmp/models/gpt-oss-20b-MXFP4.gguf",
+          "--host",
+          "127.0.0.1",
+          "--port",
+          "8099",
+          "-ngl",
+          "99",
+          "-c",
+          "24576",
+          "-np",
+          "4",
+          "--jinja",
+          "--temp",
+          "0",
+          "--seed",
+          "20261002",
+          "--chat-template-kwargs",
+          "{\"reasoning_effort\":\"low\"}"
+        ],
+        "log": "/kaggle/working/server_8099_low_effort_kwargs.log"
+      },
+      {
+        "replica": 1,
+        "gpu": 1,
+        "port": 8100,
+        "cmd": [
+          "-m",
+          "/tmp/models/gpt-oss-20b-MXFP4.gguf",
+          "--host",
+          "127.0.0.1",
+          "--port",
+          "8100",
+          "-ngl",
+          "99",
+          "-c",
+          "24576",
+          "-np",
+          "4",
+          "--jinja",
+          "--temp",
+          "0",
+          "--seed",
+          "20261002",
+          "--chat-template-kwargs",
+          "{\"reasoning_effort\":\"low\"}"
+        ],
+        "log": "/kaggle/working/server_8100_low_effort_kwargs.log"
+      }
+    ],
+    "template_ok": true,
+    "template_tail": "<|start|>system<|message|>You are ChatGPT, a large language model trained by OpenAI.\nKnowledge cutoff: 2024-06\nCurrent date: 2026-10-06\n\nReasoning: low\n\n# Valid channels: analysis, commentary, final. Channel must be included for every message.<|end|><|start|>user<|message|>ping<|end|><|start|>assistant"
+  },
+  "gguf": {
+    "repo": "ggml-org/gpt-oss-20b-GGUF",
+    "rev": "ef9b12f2ff56c69cf32153a02784e7a3c88bf524",
+    "file": "gpt-oss-20b-MXFP4.gguf",
+    "size": 12109566624,
+    "sha256": "27cd6c432c7672cb812a92f611cf3ba7bbc35928262bb1e1253ff4ee6ae35901"
+  },
+  "llama_build": "b11344",
+  "rule": {
+    "keep_eps_per_h": 64.0,
+    "util_min": 0.2,
+    "parse_max": 0.05
+  },
+  "checks": {
+    "eph_ok": true,
+    "util_ok": true,
+    "parse_ok": true,
+    "harness_ok": true,
+    "layout_ok": true,
+    "template_ok": true,
+    "tools_ok": true
+  },
+  "verdict": "KEEP",
+  "main_grid_hours_x1_10": 4.167428623785307,
+  "assumed": [
+    "HF repo ggml-org/gpt-oss-20b-GGUF (OpenAI ships no official GGUF)"
+  ],
+  "concurrency_probe": null,
+  "thinking_on_ablation": null
+}

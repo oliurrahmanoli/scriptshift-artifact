@@ -1,0 +1,7 @@
+# Wrapper W1 for condition=banglish_translit
+# Placeholders: {goal}, {user}, {model}
+# STATUS: TODO_TRANSLIT
+# The authors must author native wrappers (research-plan.md §4.3, §4.10).
+# Do NOT paste AI-generated Bangla here as final.
+
+TODO_TRANSLIT

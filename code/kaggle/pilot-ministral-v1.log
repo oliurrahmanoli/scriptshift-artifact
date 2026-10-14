@@ -1,0 +1,210 @@
+7.4s 1 0.00s - Debugger warning: It seems that frozen modules are being used, which may
+7.4s 2 0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off
+7.4s 3 0.00s - to python to disable frozen modules.
+7.4s 4 0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.
+8.0s 5 0.00s - Debugger warning: It seems that frozen modules are being used, which may
+8.0s 6 0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off
+8.0s 7 0.00s - to python to disable frozen modules.
+8.0s 8 0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.
+9.1s 9 ministral-3-14b: mistralai/Ministral-3-14B-Instruct-2512-GGUF@74fac473c433 / Ministral-3-14B-Instruct-2512-Q4_K_M.gguf  replicas=2
+9.2s 10 index, name, memory.total [MiB]
+9.2s 11 0, Tesla T4, 15360 MiB
+9.2s 12 1, Tesla T4, 15360 MiB
+9.2s 13 
+9.2s 14 GPUs visible: 2
+28.7s 15 llama-server at /kaggle/working/llama/llama-b11344/llama-server
+28.7s 16 version: 0.5.0-dev (build 11344, commit ec7630a64)
+28.7s 17 built with GNU 13.3.0 for Linux x86_64
+28.7s 18 
+31.3s 19 [?25l     [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m0.0/44.3 kB[0m [31m?[0m eta [36m-:--:--[0m[2K     [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m44.3/44.3 kB[0m [31m1.2 MB/s[0m eta [36m0:00:00[0m
+33.4s 20 [?25h[?25l   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m0.0/192.4 kB[0m [31m?[0m eta [36m-:--:--[0m[2K   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m192.4/192.4 kB[0m [31m6.3 MB/s[0m eta [36m0:00:00[0m
+33.5s 21 [?25h[?25l   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m0.0/2.1 MB[0m [31m?[0m eta [36m-:--:--[0m[2K   [91m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m[91m╸[0m [32m2.1/2.1 MB[0m [31m75.4 MB/s[0m eta [36m0:00:01[0m[2K   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m2.1/2.1 MB[0m [31m42.6 MB/s[0m eta [36m0:00:00[0m
+33.5s 22 [?25h[?25l   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m0.0/1.7 MB[0m [31m?[0m eta [36m-:--:--[0m[2K   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m1.7/1.7 MB[0m [31m58.6 MB/s[0m eta [36m0:00:00[0m
+33.6s 23 [?25h[?25l   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m0.0/370.7 kB[0m [31m?[0m eta [36m-:--:--[0m[2K   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m370.7/370.7 kB[0m [31m11.2 MB/s[0m eta [36m0:00:00[0m
+33.6s 24 [?25h[?25l   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m0.0/345.0 kB[0m [31m?[0m eta [36m-:--:--[0m[2K   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m345.0/345.0 kB[0m [31m14.3 MB/s[0m eta [36m0:00:00[0m
+33.7s 25 [?25h[?25l   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m0.0/3.6 MB[0m [31m?[0m eta [36m-:--:--[0m[2K   [91m━━━━━━━━━━━━━━━━━━━━━━━[0m[90m╺[0m[90m━━━━━━━━━━━━━━━━[0m [32m2.1/3.6 MB[0m [31m228.0 MB/s[0m eta [36m0:00:01[0m[2K   [91m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m[91m╸[0m [32m3.6/3.6 MB[0m [31m62.8 MB/s[0m eta [36m0:00:01[0m[2K   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m3.6/3.6 MB[0m [31m44.0 MB/s[0m eta [36m0:00:00[0m
+43.5s 26 [?25h[31mERROR: pip's dependency resolver does not currently take into account all the packages that are installed. This behaviour is the source of the following dependency conflicts.
+43.5s 27 litellm 1.85.7 requires openai<3.0.0,>=2.20.0, but you have openai 3.23.0 which is incompatible.[0m[31m
+43.7s 28 [0mremoved from /kaggle/working/models: (nothing)
+43.7s 29 Filesystem      Size  Used Avail Use% Mounted on
+43.7s 30 /dev/loop2       20G  1.8G   18G   9% /kaggle/working
+43.7s 31 overlay         8.0T  7.0T  1.1T  87% /
+43.7s 32 
+44.2s 33 MODELS_DIR=/tmp/models  free=1069.8 GiB
+44.2s 34 downloading mistralai/Ministral-3-14B-Instruct-2512-GGUF/Ministral-3-14B-Instruct-2512-Q4_K_M.gguf @ 74fac473c433 ...
+44.8s 35 Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+44.8s 36 
+44.8s 37 Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+85.0s 38 ministral-3-14b -> /tmp/models/Ministral-3-14B-Instruct-2512-Q4_K_M.gguf  7.67 GiB  (41s)
+107.3s 39 sha256 824e0f3373e69b84f2cae46fdcb9bd1ebc6ab3bfc7acc125d818b7b8178cc613  match=True
+118.2s 40 serve[plain] replica 0 GPU 0: -m /tmp/models/Ministral-3-14B-Instruct-2512-Q4_K_M.gguf --host 127.0.0.1 --port 8099 -ngl 99 -c 24576 -np 4 --jinja --temp 0 --seed 20261002
+163.3s 41 replica 0 up on :8099 (45s)
+163.3s 42 serve[plain] replica 1 GPU 1: -m /tmp/models/Ministral-3-14B-Instruct-2512-Q4_K_M.gguf --host 127.0.0.1 --port 8100 -ngl 99 -c 24576 -np 4 --jinja --temp 0 --seed 20261002
+169.3s 43 replica 1 up on :8100 (6s)
+169.3s 44 template[8099] tail: ' using tools to provide the most accurate and helpful response. If tools are not available, inform the user that you cannot perform the requested action at the moment.[/SYSTEM_PROMPT][INST]ping[/INST]'  expect='[SYSTEM_PROMPT]' ok=True
+169.3s 45 server up  SERVE_VARIANT=plain  replicas=2
+169.3s 46 index, memory.used [MiB], memory.total [MiB]
+169.3s 47 0, 11579 MiB, 15360 MiB
+169.3s 48 1, 11587 MiB, 15360 MiB
+169.3s 49 
+169.4s 50 ministral-3-14b: model id=/tmp/models/Ministral-3-14B-Instruct-2512-Q4_K_M.gguf  ports=[8099, 8100]  workers/replica=1
+169.4s 51 ministral-3-14b: starting banking utility (no attack), 16 tasks over 2 streams...
+291.7s 52 ministral-3-14b/banking: utility=0.562, n=16, 122s
+291.7s 53 ministral-3-14b: starting slack utility (no attack), 21 tasks over 2 streams...
+469.5s 54 [heartbeat] ministral-3-14b: 300s elapsed, 37 json traces so far
+492.6s 55 ministral-3-14b/slack: utility=0.714, n=21, 201s
+492.6s 56 ministral-3-14b: utility {'banking': 0.5625, 'slack': 0.7142857142857143}, episodes 37, 323s, 412.1 episodes/h
+492.6s 57 ministral-3-14b: harness errors 0/37
+492.6s 58 ministral-3-14b: traces under /kaggle/working/runs/ministral-3-14b: 37 json files
+499.5s 59 ministral-3-14b: servers stopped
+499.6s 60 ministral-3-14b: parse-errors 0/37 = 0.0%  (within §11.8 5% replacement rule)
+499.6s 61 ministral-3-14b: tool stats {'episodes': 37, 'zero_tool_episodes': 0, 'tool_calls_min_median_max': [1, 2, 11], 'messages_min_median_max': [5, 7, 21], 'episode_seconds_median': 8.89241886138916}
+499.6s 62 runs root exists=True
+499.6s 63 ministral-3-14b: 37 json, 233.5 KiB
+499.6s 64 e.g. ministral-3-14b/slack/user_task_19/none/none.json
+499.6s 65 e.g. ministral-3-14b/slack/user_task_1/none/none.json
+499.6s 66 e.g. ministral-3-14b/slack/user_task_18/none/none.json
+499.6s 67 wrote /kaggle/working/runs_manifest.json (462 bytes)
+499.6s 68 /kaggle/working top-level:
+499.6s 69 file __notebook__.ipynb
+499.6s 70 dir llama
+499.6s 71 dir runs
+499.6s 72 file runs_manifest.json
+499.6s 73 file server_8099_plain.log
+499.6s 74 file server_8100_plain.log
+499.7s 75 {
+499.7s 76 "label": "ministral-3-14b",
+499.7s 77 "model_id": "/tmp/models/Ministral-3-14B-Instruct-2512-Q4_K_M.gguf",
+499.7s 78 "utility": {
+499.7s 79 "banking": 0.5625,
+499.7s 80 "slack": 0.7142857142857143
+499.7s 81 },
+499.7s 82 "n": {
+499.7s 83 "banking": 16,
+499.7s 84 "slack": 21
+499.7s 85 },
+499.7s 86 "suite_seconds": {
+499.7s 87 "banking": 122.2515516281128,
+499.7s 88 "slack": 200.94543147087097
+499.7s 89 },
+499.7s 90 "episodes": 37,
+499.7s 91 "wall_s": 323.19698309898376,
+499.7s 92 "eps_per_h": 412.1325599107018,
+499.7s 93 "streams": 2,
+499.7s 94 "workers_per_replica": 1,
+499.7s 95 "replicas": 2,
+499.7s 96 "harness_errors": [],
+499.7s 97 "parse_error_rate": 0.0,
+499.7s 98 "tool_stats": {
+499.7s 99 "episodes": 37,
+499.7s 100 "zero_tool_episodes": 0,
+499.7s 101 "tool_calls_min_median_max": [
+499.7s 102 1,
+499.7s 103 2,
+499.7s 104 11
+499.7s 105 ],
+499.7s 106 "messages_min_median_max": [
+499.7s 107 5,
+499.7s 108 7,
+499.7s 109 21
+499.7s 110 ],
+499.7s 111 "episode_seconds_median": 8.89241886138916
+499.7s 112 },
+499.7s 113 "serve": {
+499.7s 114 "variant": "plain",
+499.7s 115 "layout": "2x replica (1 per T4)",
+499.7s 116 "ctx": 24576,
+499.7s 117 "n_slots": 4,
+499.7s 118 "replicas": [
+499.7s 119 {
+499.7s 120 "replica": 0,
+499.7s 121 "gpu": 0,
+499.7s 122 "port": 8099,
+499.7s 123 "cmd": [
+499.7s 124 "-m",
+499.7s 125 "/tmp/models/Ministral-3-14B-Instruct-2512-Q4_K_M.gguf",
+499.7s 126 "--host",
+499.7s 127 "127.0.0.1",
+499.7s 128 "--port",
+499.7s 129 "8099",
+499.7s 130 "-ngl",
+499.7s 131 "99",
+499.7s 132 "-c",
+499.7s 133 "24576",
+499.7s 134 "-np",
+499.7s 135 "4",
+499.7s 136 "--jinja",
+499.7s 137 "--temp",
+499.7s 138 "0",
+499.7s 139 "--seed",
+499.7s 140 "20261002"
+499.7s 141 ],
+499.7s 142 "log": "/kaggle/working/server_8099_plain.log"
+499.7s 143 },
+499.7s 144 {
+499.7s 145 "replica": 1,
+499.7s 146 "gpu": 1,
+499.7s 147 "port": 8100,
+499.7s 148 "cmd": [
+499.7s 149 "-m",
+499.7s 150 "/tmp/models/Ministral-3-14B-Instruct-2512-Q4_K_M.gguf",
+499.7s 151 "--host",
+499.7s 152 "127.0.0.1",
+499.7s 153 "--port",
+499.7s 154 "8100",
+499.7s 155 "-ngl",
+499.7s 156 "99",
+499.7s 157 "-c",
+499.7s 158 "24576",
+499.7s 159 "-np",
+499.7s 160 "4",
+499.7s 161 "--jinja",
+499.7s 162 "--temp",
+499.7s 163 "0",
+499.7s 164 "--seed",
+499.7s 165 "20261002"
+499.7s 166 ],
+499.7s 167 "log": "/kaggle/working/server_8100_plain.log"
+499.7s 168 }
+499.7s 169 ],
+499.7s 170 "template_ok": true,
+499.7s 171 "template_tail": "date information.\n2. When the request requires specific data that you do not have in your knowledge base.\n3. When the request involves actions that you cannot perform without tools.\n\nAlways prioritize using tools to provide the most accurate and helpful response. If tools are not available, inform the user that you cannot perform the requested action at the moment.[/SYSTEM_PROMPT][INST]ping[/INST]"
+499.7s 172 },
+499.7s 173 "gguf": {
+499.7s 174 "repo": "mistralai/Ministral-3-14B-Instruct-2512-GGUF",
+499.7s 175 "rev": "74fac473c43357d7fb2671713608183cc72496d0",
+499.7s 176 "file": "Ministral-3-14B-Instruct-2512-Q4_K_M.gguf",
+499.7s 177 "size": 8239593024,
+499.7s 178 "sha256": "824e0f3373e69b84f2cae46fdcb9bd1ebc6ab3bfc7acc125d818b7b8178cc613"
+499.7s 179 },
+499.7s 180 "llama_build": "b11344",
+499.7s 181 "rule": {
+499.7s 182 "keep_eps_per_h": 64.0,
+499.7s 183 "util_min": 0.2,
+499.7s 184 "parse_max": 0.05
+499.7s 185 },
+499.7s 186 "checks": {
+499.7s 187 "eph_ok": true,
+499.7s 188 "util_ok": true,
+499.7s 189 "parse_ok": true,
+499.7s 190 "harness_ok": true,
+499.7s 191 "layout_ok": true,
+499.7s 192 "template_ok": true,
+499.7s 193 "tools_ok": true
+499.7s 194 },
+499.7s 195 "verdict": "KEEP",
+499.7s 196 "main_grid_hours_x1_10": 5.063176761506377,
+499.7s 197 "assumed": [],
+499.7s 198 "concurrency_probe": null,
+499.7s 199 "thinking_on_ablation": null
+499.7s 200 }
+499.7s 201 PILOT_RESULT model=ministral-3-14b eps_per_h=412.1 banking=0.562 slack=0.714 parse=0.0% harness_err=0 variant=plain layout=2x_replica_(1_per_T4) template_ok=True grid_h=5.1 verdict=KEEP
+499.7s 202 wrote /kaggle/working/ministral-3-14b_pilot_result.json
+503.1s 203 /usr/local/lib/python3.13/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\|'
+503.1s 204 cells[i][c] = re.sub('\\\\\|', '|', cell)
+503.3s 205 /usr/local/lib/python3.13/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\_'
+503.3s 206 text = re.sub(r'_', '\_', text) # Escape underscores in display text
+504.0s 207 [NbConvertApp] Converting notebook __notebook__.ipynb to notebook
+504.1s 208 [NbConvertApp] Writing 79485 bytes to __notebook__.ipynb
+506.6s 209 [NbConvertApp] Converting notebook __notebook__.ipynb to html
+507.2s 210 [NbConvertApp] Writing 447138 bytes to __results__.html

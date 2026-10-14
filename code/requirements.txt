@@ -1,0 +1,14 @@
+# Pinned versions for the agent harness, scoring and analysis (section 11.8).
+# These are the versions actually used to build and smoke-test this artefact on
+# the box (Python 3.13). Re-pin on Kaggle if its base image differs, and log it.
+agentdojo==0.1.35
+openai==3.23.0
+google-genai==2.27.0
+pydantic==2.13.5
+numpy==2.5.3
+scipy==1.18.1
+pandas==3.0.6
+statsmodels==0.15.0
+pytest==9.1.1
+# Benchmark pin: AgentDojo benchmark version v1.2.2 (passed at runtime).
+matplotlib==3.11.2   # analysis/ figures F1/F2 (D23)

@@ -1,0 +1,57 @@
+{
+  "model_id": "/tmp/models/gemma-4-26B_q4_0-it.gguf",
+  "utility": {
+    "banking": 0.75,
+    "slack": 0.9523809523809523
+  },
+  "n": {
+    "banking": 16,
+    "slack": 21
+  },
+  "suite_seconds": {
+    "banking": 103.5501914024353,
+    "slack": 95.84956240653992
+  },
+  "episodes": 37,
+  "wall_s": 199.40323901176453,
+  "eps_per_h": 667.9931612953458,
+  "parse_error_rate": 0.0,
+  "serve": {
+    "variant": "swa_full+no_think",
+    "cmd": [
+      "-m",
+      "/tmp/models/gemma-4-26B_q4_0-it.gguf",
+      "--host",
+      "127.0.0.1",
+      "--port",
+      "8099",
+      "-ngl",
+      "99",
+      "-c",
+      "24576",
+      "-np",
+      "4",
+      "--jinja",
+      "--temp",
+      "0",
+      "--tensor-split",
+      "1,1",
+      "--swa-full",
+      "--chat-template-kwargs",
+      "{\"enable_thinking\":false}"
+    ],
+    "log": "/kaggle/working/server_8099_swa_full+no_think.log"
+  },
+  "gguf": {
+    "repo": "google/gemma-4-26B-A4B-it-qat-q4_0-gguf",
+    "rev": "d1c082be9cf3c8a514acf63b8761f4b41935842e",
+    "file": "gemma-4-26B_q4_0-it.gguf",
+    "sha256": "3eca3b8f6d7baf218a7dd6bba5fb59a56ee25fe2d567b6f5f589b4f697eca51d"
+  },
+  "llama_build": "b11344",
+  "keep_threshold_eps_per_h": 64.0,
+  "eph_ok": true,
+  "util_ok": true,
+  "parse_ok": true,
+  "verdict": "KEEP"
+}

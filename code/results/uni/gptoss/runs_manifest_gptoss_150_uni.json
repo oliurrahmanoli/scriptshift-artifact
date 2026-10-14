@@ -1,0 +1,185 @@
+{
+  "run_id": "gptoss_150_uni",
+  "arm": "unicode_preserving",
+  "decision": "D41",
+  "model_key": "gptoss",
+  "label": "gpt-oss-20b",
+  "tiers": [
+    "tier_A"
+  ],
+  "n_tasks": 169,
+  "streams_per_server": 1,
+  "smoke_n": null,
+  "gguf": {
+    "repo": "ggml-org/gpt-oss-20b-GGUF",
+    "rev": "ef9b12f2ff56c69cf32153a02784e7a3c88bf524",
+    "file": "gpt-oss-20b-MXFP4.gguf",
+    "size": 12109566624,
+    "sha256": "27cd6c432c7672cb812a92f611cf3ba7bbc35928262bb1e1253ff4ee6ae35901"
+  },
+  "serve": {
+    "layout": "2replica",
+    "variant": "low_effort_kwargs",
+    "ports": [
+      8099,
+      8100
+    ],
+    "model_id": "/tmp/models/gpt-oss-20b-MXFP4.gguf",
+    "servers": [
+      {
+        "port": 8099,
+        "gpu": "0",
+        "cmd": [
+          "-m",
+          "/tmp/models/gpt-oss-20b-MXFP4.gguf",
+          "--host",
+          "127.0.0.1",
+          "-ngl",
+          "99",
+          "-c",
+          "24576",
+          "-np",
+          "1",
+          "--jinja",
+          "--temp",
+          "0",
+          "--seed",
+          "20261002",
+          "--port",
+          "8099",
+          "--chat-template-kwargs",
+          "{\"reasoning_effort\":\"low\"}"
+        ],
+        "log": "/kaggle/working/server_8099.log"
+      },
+      {
+        "port": 8100,
+        "gpu": "1",
+        "cmd": [
+          "-m",
+          "/tmp/models/gpt-oss-20b-MXFP4.gguf",
+          "--host",
+          "127.0.0.1",
+          "-ngl",
+          "99",
+          "-c",
+          "24576",
+          "-np",
+          "1",
+          "--jinja",
+          "--temp",
+          "0",
+          "--seed",
+          "20261002",
+          "--port",
+          "8100",
+          "--chat-template-kwargs",
+          "{\"reasoning_effort\":\"low\"}"
+        ],
+        "log": "/kaggle/working/server_8100.log"
+      }
+    ],
+    "template_ok": true,
+    "template_tails": {
+      "8099": "tart|>system<|message|>You are ChatGPT, a large language model trained by OpenAI.\nKnowledge cutoff: 2024-06\nCurrent date: 2026-10-06\n\nReasoning: low\n\n# Valid channels: analysis, commentary, final. Channel must be included for every message.<|end|><|start|>user<|message|>ping<|end|><|start|>assistant",
+      "8100": "tart|>system<|message|>You are ChatGPT, a large language model trained by OpenAI.\nKnowledge cutoff: 2024-06\nCurrent date: 2026-10-06\n\nReasoning: low\n\n# Valid channels: analysis, commentary, final. Channel must be included for every message.<|end|><|start|>user<|message|>ping<|end|><|start|>assistant"
+    }
+  },
+  "llama_build": "b11344",
+  "seed": 20261002,
+  "pinned": {
+    "agentdojo": "0.1.35",
+    "openai": "3.23.0",
+    "google-genai": "2.12.1",
+    "python": "3.13.15",
+    "benchmark_version": "v1.2.2"
+  },
+  "embed": {
+    "sha256": "3d082fa317d844d76942671539763fbc0f5fb717c88370d7e72f108a1537e6ce",
+    "bytes": 114372,
+    "n_files": 168
+  },
+  "stock_embed_sha256": "ee7b4195e694977b3f4e060155d66ca373027cdc2dee98ee88750b5305169334",
+  "selection_sha256": "c0394386df2df67ddce518d964cddc547166353c0928ffd2f99a30c443119f7f",
+  "unicode_patch": {
+    "patch_id": "D41-unicode-preserving-v1",
+    "enabled": false,
+    "agentdojo": "0.1.35",
+    "targets": [
+      "agentdojo.agent_pipeline.tool_execution.tool_result_to_str: default dump_fn yaml.safe_dump -> yaml.safe_dump(allow_unicode=True)",
+      "agentdojo.agent_pipeline.llms.openai_llm._tool_call_to_openai: json.dumps(args) -> json.dumps(args, ensure_ascii=False)"
+    ],
+    "enabled_for_arm": true
+  },
+  "payload_verify": {
+    "files": 146,
+    "canonical": 4,
+    "goal_files_vs_payloads_json": 140,
+    "wrappers": 4,
+    "conditions": [
+      "banglish_llm",
+      "bn_llm",
+      "bn_mt",
+      "en"
+    ],
+    "sums_sha256": "83e60ad7f7aa2593d9a50434b42e972d6ff39e779b6b3e867b81ead55be9010c"
+  },
+  "resume_seeded": {
+    "jsonl": 0,
+    "zips": 0,
+    "lines": 0,
+    "traces": 0
+  },
+  "stats": {
+    "n_tasks": 169,
+    "already_done": 0,
+    "ran": 169,
+    "ok": 168,
+    "error": 1,
+    "worker_errors": [],
+    "remaining": 0,
+    "stopped_by_deadline": false,
+    "grid_s": 914.3,
+    "eps_per_h": 665.4,
+    "arm": "unicode_preserving"
+  },
+  "summary": {
+    "per_condition": {
+      "bn_mt": {
+        "expected": 84,
+        "ok": 83,
+        "error": 1,
+        "missing": 0
+      },
+      "bn_llm": {
+        "expected": 85,
+        "ok": 85,
+        "error": 0,
+        "missing": 0
+      }
+    },
+    "episodes_expected": 169,
+    "episodes_done": 168,
+    "errors": 1,
+    "missing": 0,
+    "complete": false
+  },
+  "traces_zip": {
+    "zip": "/kaggle/working/gptoss_150_uni_traces.zip",
+    "n_traces": 169,
+    "zip_bytes": 488516
+  },
+  "est_session_h": 0.46,
+  "session_started": "2026-10-06T16:05:03",
+  "session_ended": "2026-10-06T16:23:45",
+  "wall_s": 1122.7,
+  "outputs": {
+    "jsonl": "/kaggle/working/runs/gptoss_150_uni.jsonl",
+    "traces_dir": "/kaggle/working/runs/traces_uni",
+    "traces_zip": "/kaggle/working/gptoss_150_uni_traces.zip",
+    "server_logs": [
+      "/kaggle/working/server_8099.log",
+      "/kaggle/working/server_8100.log"
+    ]
+  }
+}

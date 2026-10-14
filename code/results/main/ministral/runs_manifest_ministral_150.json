@@ -1,0 +1,191 @@
+{
+  "run_id": "ministral_150",
+  "model_key": "ministral",
+  "label": "ministral-3-14b",
+  "shard": "1/1",
+  "subset": "150",
+  "n_pairs": 150,
+  "conditions": [
+    "en",
+    "bn_mt",
+    "bn_llm",
+    "banglish_llm"
+  ],
+  "defense": null,
+  "run_utility": true,
+  "streams_per_server": 1,
+  "smoke_n": null,
+  "gguf": {
+    "repo": "mistralai/Ministral-3-14B-Instruct-2512-GGUF",
+    "rev": "74fac473c43357d7fb2671713608183cc72496d0",
+    "file": "Ministral-3-14B-Instruct-2512-Q4_K_M.gguf",
+    "size": 8239593024,
+    "sha256": "824e0f3373e69b84f2cae46fdcb9bd1ebc6ab3bfc7acc125d818b7b8178cc613"
+  },
+  "serve": {
+    "layout": "2replica",
+    "variant": "plain",
+    "ports": [
+      8099,
+      8100
+    ],
+    "model_id": "/tmp/models/Ministral-3-14B-Instruct-2512-Q4_K_M.gguf",
+    "servers": [
+      {
+        "port": 8099,
+        "gpu": "0",
+        "cmd": [
+          "-m",
+          "/tmp/models/Ministral-3-14B-Instruct-2512-Q4_K_M.gguf",
+          "--host",
+          "127.0.0.1",
+          "-ngl",
+          "99",
+          "-c",
+          "24576",
+          "-np",
+          "1",
+          "--jinja",
+          "--temp",
+          "0",
+          "--seed",
+          "20261002",
+          "--port",
+          "8099"
+        ],
+        "log": "/kaggle/working/server_8099.log"
+      },
+      {
+        "port": 8100,
+        "gpu": "1",
+        "cmd": [
+          "-m",
+          "/tmp/models/Ministral-3-14B-Instruct-2512-Q4_K_M.gguf",
+          "--host",
+          "127.0.0.1",
+          "-ngl",
+          "99",
+          "-c",
+          "24576",
+          "-np",
+          "1",
+          "--jinja",
+          "--temp",
+          "0",
+          "--seed",
+          "20261002",
+          "--port",
+          "8100"
+        ],
+        "log": "/kaggle/working/server_8100.log"
+      }
+    ],
+    "template_ok": true,
+    "template_tails": {
+      "8099": "base.\n3. When the request involves actions that you cannot perform without tools.\n\nAlways prioritize using tools to provide the most accurate and helpful response. If tools are not available, inform the user that you cannot perform the requested action at the moment.[/SYSTEM_PROMPT][INST]ping[/INST]",
+      "8100": "base.\n3. When the request involves actions that you cannot perform without tools.\n\nAlways prioritize using tools to provide the most accurate and helpful response. If tools are not available, inform the user that you cannot perform the requested action at the moment.[/SYSTEM_PROMPT][INST]ping[/INST]"
+    }
+  },
+  "llama_build": "b11344",
+  "seed": 20261002,
+  "pinned": {
+    "agentdojo": "0.1.35",
+    "openai": "3.23.0",
+    "google-genai": "2.12.1",
+    "python": "3.13.15",
+    "benchmark_version": "v1.2.2"
+  },
+  "embed": {
+    "sha256": "ee7b4195e694977b3f4e060155d66ca373027cdc2dee98ee88750b5305169334",
+    "bytes": 94925,
+    "n_files": 163
+  },
+  "payload_verify": {
+    "files": 146,
+    "canonical": 4,
+    "goal_files_vs_payloads_json": 140,
+    "wrappers": 4,
+    "conditions": [
+      "banglish_llm",
+      "bn_llm",
+      "bn_mt",
+      "en"
+    ],
+    "sums_sha256": "83e60ad7f7aa2593d9a50434b42e972d6ff39e779b6b3e867b81ead55be9010c"
+  },
+  "resume_seeded": {
+    "jsonl": [],
+    "zips": [],
+    "lines": 0,
+    "traces": 0
+  },
+  "stats": {
+    "n_tasks": 697,
+    "already_done": 0,
+    "ran": 697,
+    "ok": 696,
+    "error": 1,
+    "worker_errors": [],
+    "remaining": 0,
+    "stopped_by_deadline": false,
+    "grid_s": 11885.9,
+    "eps_per_h": 211.1
+  },
+  "summary": {
+    "per_condition": {
+      "en": {
+        "expected": 150,
+        "ok": 149,
+        "error": 1,
+        "missing": 0
+      },
+      "bn_mt": {
+        "expected": 150,
+        "ok": 150,
+        "error": 0,
+        "missing": 0
+      },
+      "bn_llm": {
+        "expected": 150,
+        "ok": 150,
+        "error": 0,
+        "missing": 0
+      },
+      "banglish_llm": {
+        "expected": 150,
+        "ok": 150,
+        "error": 0,
+        "missing": 0
+      },
+      "none": {
+        "expected": 97,
+        "ok": 97,
+        "error": 0,
+        "missing": 0
+      }
+    },
+    "episodes_expected": 697,
+    "episodes_done": 696,
+    "errors": 1,
+    "missing": 0,
+    "complete": false
+  },
+  "traces_zip": {
+    "zip": "/kaggle/working/ministral_150_traces.zip",
+    "n_traces": 697,
+    "zip_bytes": 2049790
+  },
+  "est_session_h": 2.11,
+  "session_started": "2026-10-06T07:58:33",
+  "session_ended": "2026-10-06T11:19:10",
+  "wall_s": 12036.4,
+  "outputs": {
+    "jsonl": "/kaggle/working/runs/ministral_150.jsonl",
+    "traces_dir": "/kaggle/working/runs/traces",
+    "traces_zip": "/kaggle/working/ministral_150_traces.zip",
+    "server_logs": [
+      "/kaggle/working/server_8099.log",
+      "/kaggle/working/server_8100.log"
+    ]
+  }
+}

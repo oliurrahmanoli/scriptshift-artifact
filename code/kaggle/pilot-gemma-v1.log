@@ -1,0 +1,128 @@
+11.1s 1 0.00s - Debugger warning: It seems that frozen modules are being used, which may
+11.1s 2 0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off
+11.1s 3 0.00s - to python to disable frozen modules.
+11.1s 4 0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.
+11.8s 5 0.00s - Debugger warning: It seems that frozen modules are being used, which may
+11.8s 6 0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off
+11.8s 7 0.00s - to python to disable frozen modules.
+11.8s 8 0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.
+13.3s 9 name, memory.total [MiB]
+13.3s 10 Tesla T4, 15360 MiB
+13.3s 11 Tesla T4, 15360 MiB
+13.3s 12 
+13.3s 13 GPUs visible: 2
+32.6s 14 llama-server at /kaggle/working/llama/llama-b11344/llama-server
+32.6s 15 version: 0.5.0-dev (build 11344, commit ec7630a64)
+32.6s 16 built with GNU 13.3.0 for Linux x86_64
+32.6s 17 
+37.5s 18 [?25l     [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m0.0/44.3 kB[0m [31m?[0m eta [36m-:--:--[0m[2K     [91m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m[91m╸[0m[90m━━━[0m [32m41.0/44.3 kB[0m [31m83.3 MB/s[0m eta [36m0:00:01[0m[2K     [91m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m[91m╸[0m[90m━━━[0m [32m41.0/44.3 kB[0m [31m83.3 MB/s[0m eta [36m0:00:01[0m[2K     [91m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m[91m╸[0m[90m━━━[0m [32m41.0/44.3 kB[0m [31m83.3 MB/s[0m eta [36m0:00:01[0m[2K     [91m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m[91m╸[0m[90m━━━[0m [32m41.0/44.3 kB[0m [31m83.3 MB/s[0m eta [36m0:00:01[0m[2K     [91m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m[91m╸[0m[90m━━━[0m [32m41.0/44.3 kB[0m [31m83.3 MB/s[0m eta [36m0:00:01[0m[2K     [91m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m[91m╸[0m[90m━━━[0m [32m41.0/44.3 kB[0m [31m83.3 MB/s[0m eta [36m0:00:01[0m[2K     [91m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m[91m╸[0m[90m━━━[0m [32m41.0/44.3 kB[0m [31m83.3 MB/s[0m eta [36m0:00:01[0m[2K     [91m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m[91m╸[0m[90m━━━[0m [32m41.0/44.3 kB[0m [31m83.3 MB/s[0m eta [36m0:00:01[0m[2K     [91m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m[91m╸[0m[90m━━━[0m [32m41.0/44.3 kB[0m [31m83.3 MB/s[0m eta [36m0:00:01[0m[2K     [91m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m[91m╸[0m[90m━━━[0m [32m41.0/44.3 kB[0m [31m83.3 MB/s[0m eta [36m0:00:01[0m[2K     [91m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m[91m╸[0m[90m━━━[0m [32m41.0/44.3 kB[0m [31m83.3 MB/s[0m eta [36m0:00:01[0m[2K     [91m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m[91m╸[0m[90m━━━[0m [32m41.0/44.3 kB[0m [31m83.3 MB/s[0m eta [36m0:00:01[0m[2K     [91m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m[91m╸[0m[90m━━━[0m [32m41.0/44.3 kB[0m [31m83.3 MB/s[0m eta [36m0:00:01[0m[2K     [91m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m[91m╸[0m[90m━━━[0m [32m41.0/44.3 kB[0m [31m83.3 MB/s[0m eta [36m0:00:01[0m[2K     [91m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m[91m╸[0m[90m━━━[0m [32m41.0/44.3 kB[0m [31m83.3 MB/s[0m eta [36m0:00:01[0m[2K     [91m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m[91m╸[0m[90m━━━[0m [32m41.0/44.3 kB[0m [31m83.3 MB/s[0m eta [36m0:00:01[0m[2K     [91m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m[91m╸[0m[90m━━━[0m [32m41.0/44.3 kB[0m [31m83.3 MB/s[0m eta [36m0:00:01[0m[2K     [91m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m[91m╸[0m[90m━━━[0m [32m41.0/44.3 kB[0m [31m83.3 MB/s[0m eta [36m0:00:01[0m[2K     [91m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m[91m╸[0m[90m━━━[0m [32m41.0/44.3 kB[0m [31m83.3 MB/s[0m eta [36m0:00:01[0m[2K     [91m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m[91m╸[0m[90m━━━[0m [32m41.0/44.3 kB[0m [31m83.3 MB/s[0m eta [36m0:00:01[0m[2K     [91m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m[91m╸[0m[90m━━━[0m [32m41.0/44.3 kB[0m [31m83.3 MB/s[0m eta [36m0:00:01[0m[2K     [91m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m[91m╸[0m[90m━━━[0m [32m41.0/44.3 kB[0m [31m83.3 MB/s[0m eta [36m0:00:01[0m[2K     [91m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m[91m╸[0m[90m━━━[0m [32m41.0/44.3 kB[0m [31m83.3 MB/s[0m eta [36m0:00:01[0m[2K     [91m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m[91m╸[0m[90m━━━[0m [32m41.0/44.3 kB[0m [31m83.3 MB/s[0m eta [36m0:00:01[0m[2K     [91m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m[91m╸[0m[90m━━━[0m [32m41.0/44.3 kB[0m [31m83.3 MB/s[0m eta [36m0:00:01[0m[2K     [91m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m[91m╸[0m[90m━━━[0m [32m41.0/44.3 kB[0m [31m83.3 MB/s[0m eta [36m0:00:01[0m[2K     [91m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m[91m╸[0m[90m━━━[0m [32m41.0/44.3 kB[0m [31m83.3 MB/s[0m eta [36m0:00:01[0m[2K     [91m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m[91m╸[0m[90m━━━[0m [32m41.0/44.3 kB[0m [31m83.3 MB/s[0m eta [36m0:00:01[0m[2K     [91m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m[91m╸[0m[90m━━━[0m [32m41.0/44.3 kB[0m [31m83.3 MB/s[0m eta [36m0:00:01[0m[2K     [91m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m[91m╸[0m[90m━━━[0m [32m41.0/44.3 kB[0m [31m83.3 MB/s[0m eta [36m0:00:01[0m[2K     [91m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m[91m╸[0m[90m━━━[0m [32m41.0/44.3 kB[0m [31m83.3 MB/s[0m eta [36m0:00:01[0m[2K     [91m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m[91m╸[0m[90m━━━[0m [32m41.0/44.3 kB[0m [31m83.3 MB/s[0m eta [36m0:00:01[0m[2K     [91m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m[91m╸[0m[90m━━━[0m [32m41.0/44.3 kB[0m [31m83.3 MB/s[0m eta [36m0:00:01[0m[2K     [91m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m[91m╸[0m[90m━━━[0m [32m41.0/44.3 kB[0m [31m83.3 MB/s[0m eta [36m0:00:01[0m[2K     [91m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m[91m╸[0m[90m━━━[0m [32m41.0/44.3 kB[0m [31m83.3 MB/s[0m eta [36m0:00:01[0m[2K     [91m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m[91m╸[0m[90m━━━[0m [32m41.0/44.3 kB[0m [31m83.3 MB/s[0m eta [36m0:00:01[0m[2K     [91m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m[91m╸[0m[90m━━━[0m [32m41.0/44.3 kB[0m [31m83.3 MB/s[0m eta [36m0:00:01[0m[2K     [91m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m[91m╸[0m[90m━━━[0m [32m41.0/44.3 kB[0m [31m83.3 MB/s[0m eta [36m0:00:01[0m[2K     [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m44.3/44.3 kB[0m [31m25.2 kB/s[0m eta [36m0:00:00[0m
+39.1s 19 [?25h[?25l   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m0.0/192.4 kB[0m [31m?[0m eta [36m-:--:--[0m[2K   [91m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m[90m╺[0m[90m━[0m [32m184.3/192.4 kB[0m [31m16.8 MB/s[0m eta [36m0:00:01[0m[2K   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m192.4/192.4 kB[0m [31m4.5 MB/s[0m eta [36m0:00:00[0m
+39.1s 20 [?25h[?25l   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m0.0/2.1 MB[0m [31m?[0m eta [36m-:--:--[0m[2K   [91m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m[91m╸[0m [32m2.1/2.1 MB[0m [31m118.8 MB/s[0m eta [36m0:00:01[0m[2K   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m2.1/2.1 MB[0m [31m53.1 MB/s[0m eta [36m0:00:00[0m
+39.1s 21 [?25h[?25l   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m0.0/1.7 MB[0m [31m?[0m eta [36m-:--:--[0m[2K   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m1.7/1.7 MB[0m [31m62.9 MB/s[0m eta [36m0:00:00[0m
+39.2s 22 [?25h[?25l   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m0.0/370.7 kB[0m [31m?[0m eta [36m-:--:--[0m[2K   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m370.7/370.7 kB[0m [31m11.9 MB/s[0m eta [36m0:00:00[0m
+39.2s 23 [?25h[?25l   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m0.0/345.0 kB[0m [31m?[0m eta [36m-:--:--[0m[2K   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m345.0/345.0 kB[0m [31m13.3 MB/s[0m eta [36m0:00:00[0m
+39.3s 24 [?25h[?25l   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m0.0/3.6 MB[0m [31m?[0m eta [36m-:--:--[0m[2K   [91m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m[91m╸[0m [32m3.6/3.6 MB[0m [31m237.3 MB/s[0m eta [36m0:00:01[0m[2K   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m3.6/3.6 MB[0m [31m75.7 MB/s[0m eta [36m0:00:00[0m
+49.4s 25 [?25h[31mERROR: pip's dependency resolver does not currently take into account all the packages that are installed. This behaviour is the source of the following dependency conflicts.
+49.4s 26 litellm 1.85.7 requires openai<3.0.0,>=2.20.0, but you have openai 3.23.0 which is incompatible.[0m[31m
+49.7s 27 [0mremoved from /kaggle/working/models: (nothing)
+49.7s 28 Filesystem      Size  Used Avail Use% Mounted on
+49.7s 29 /dev/loop2       20G  1.8G   18G   9% /kaggle/working
+49.7s 30 overlay         8.0T  7.0T  1.1T  87% /
+49.7s 31 
+50.4s 32 MODELS_DIR=/tmp/models  free=1069.8 GiB
+50.4s 33 downloading google/gemma-4-26B-A4B-it-qat-q4_0-gguf/gemma-4-26B_q4_0-it.gguf ...
+51.0s 34 Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+51.0s 35 
+51.0s 36 Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+117.4s 37 Gemma -> /tmp/models/gemma-4-26B_q4_0-it.gguf  13.45 GiB  (67s)
+168.6s 38 sha256 3eca3b8f6d7baf218a7dd6bba5fb59a56ee25fe2d567b6f5f589b4f697eca51d  match=True
+176.0s 39 gemma-4-26b-a4b: loading weights / starting llama-server...
+176.0s 40 serve[swa_full+no_think]: -m /tmp/models/gemma-4-26B_q4_0-it.gguf --host 127.0.0.1 --port 8099 -ngl 99 -c 24576 -np 4 --jinja --temp 0 --tensor-split 1,1 --swa-full --chat-template-kwargs {"enable_thinking":false}
+269.1s 41 server up  SERVE_VARIANT=swa_full+no_think  (93s)
+269.3s 42 gemma-4-26b-a4b: model id=/tmp/models/gemma-4-26B_q4_0-it.gguf
+269.3s 43 gemma-4-26b-a4b: starting banking utility (no attack)...
+372.8s 44 gemma-4-26b-a4b/banking: utility=0.750, n=16, 104s
+372.8s 45 gemma-4-26b-a4b: starting slack utility (no attack)...
+468.7s 46 gemma-4-26b-a4b/slack: utility=0.952, n=21, 96s
+468.7s 47 gemma-4-26b-a4b: utility {'banking': 0.75, 'slack': 0.9523809523809523}, episodes 37, 199s, 668.0 episodes/h
+468.7s 48 gemma-4-26b-a4b: traces under /kaggle/working/runs/gemma-4-26b-a4b: 37 json files
+468.7s 49 gemma-4-26b-a4b: server stopped
+468.7s 50 gemma-4-26b-a4b: parse-errors 0/37 = 0.0%  (within §11.8 5% replacement rule)
+468.7s 51 runs root exists=True
+468.7s 52 gemma-4-26b-a4b: 37 json, 247.7 KiB
+468.7s 53 e.g. gemma-4-26b-a4b/slack/user_task_0/none/none.json
+468.7s 54 e.g. gemma-4-26b-a4b/slack/user_task_1/none/none.json
+468.7s 55 e.g. gemma-4-26b-a4b/slack/user_task_12/none/none.json
+468.7s 56 wrote /kaggle/working/runs_manifest.json (461 bytes)
+468.7s 57 /kaggle/working top-level:
+468.7s 58 file __notebook__.ipynb
+468.7s 59 dir llama
+468.7s 60 dir runs
+468.7s 61 file runs_manifest.json
+468.7s 62 file server_8099_swa_full+no_think.log
+468.8s 63 {
+468.8s 64 "model_id": "/tmp/models/gemma-4-26B_q4_0-it.gguf",
+468.8s 65 "utility": {
+468.8s 66 "banking": 0.75,
+468.8s 67 "slack": 0.9523809523809523
+468.8s 68 },
+468.8s 69 "n": {
+468.8s 70 "banking": 16,
+468.8s 71 "slack": 21
+468.8s 72 },
+468.8s 73 "suite_seconds": {
+468.8s 74 "banking": 103.5501914024353,
+468.8s 75 "slack": 95.84956240653992
+468.8s 76 },
+468.8s 77 "episodes": 37,
+468.8s 78 "wall_s": 199.40323901176453,
+468.8s 79 "eps_per_h": 667.9931612953458,
+468.8s 80 "parse_error_rate": 0.0,
+468.8s 81 "serve": {
+468.8s 82 "variant": "swa_full+no_think",
+468.8s 83 "cmd": [
+468.8s 84 "-m",
+468.8s 85 "/tmp/models/gemma-4-26B_q4_0-it.gguf",
+468.8s 86 "--host",
+468.8s 87 "127.0.0.1",
+468.8s 88 "--port",
+468.8s 89 "8099",
+468.8s 90 "-ngl",
+468.8s 91 "99",
+468.8s 92 "-c",
+468.8s 93 "24576",
+468.8s 94 "-np",
+468.8s 95 "4",
+468.8s 96 "--jinja",
+468.8s 97 "--temp",
+468.8s 98 "0",
+468.8s 99 "--tensor-split",
+468.8s 100 "1,1",
+468.8s 101 "--swa-full",
+468.8s 102 "--chat-template-kwargs",
+468.8s 103 "{\"enable_thinking\":false}"
+468.8s 104 ],
+468.8s 105 "log": "/kaggle/working/server_8099_swa_full+no_think.log"
+468.8s 106 },
+468.8s 107 "gguf": {
+468.8s 108 "repo": "google/gemma-4-26B-A4B-it-qat-q4_0-gguf",
+468.8s 109 "rev": "d1c082be9cf3c8a514acf63b8761f4b41935842e",
+468.8s 110 "file": "gemma-4-26B_q4_0-it.gguf",
+468.8s 111 "sha256": "3eca3b8f6d7baf218a7dd6bba5fb59a56ee25fe2d567b6f5f589b4f697eca51d"
+468.8s 112 },
+468.8s 113 "llama_build": "b11344",
+468.8s 114 "keep_threshold_eps_per_h": 64.0,
+468.8s 115 "eph_ok": true,
+468.8s 116 "util_ok": true,
+468.8s 117 "parse_ok": true,
+468.8s 118 "verdict": "KEEP"
+468.8s 119 }
+468.8s 120 GEMMA_PILOT_RESULT eps_per_h=668.0 banking=0.750 slack=0.952 parse=0.0% variant=swa_full+no_think verdict=KEEP
+474.0s 121 /usr/local/lib/python3.13/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\|'
+474.0s 122 cells[i][c] = re.sub('\\\\\|', '|', cell)
+474.2s 123 /usr/local/lib/python3.13/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\_'
+474.2s 124 text = re.sub(r'_', '\_', text) # Escape underscores in display text
+474.9s 125 [NbConvertApp] Converting notebook __notebook__.ipynb to notebook
+475.0s 126 [NbConvertApp] Writing 59943 bytes to __notebook__.ipynb
+477.5s 127 [NbConvertApp] Converting notebook __notebook__.ipynb to html
+478.1s 128 [NbConvertApp] Writing 384012 bytes to __results__.html

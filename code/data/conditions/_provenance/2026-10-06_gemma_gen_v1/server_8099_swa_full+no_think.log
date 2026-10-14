@@ -1,0 +1,32 @@
+0.00.164.824 W Setting 'enable_thinking' via --chat-template-kwargs is deprecated. Use --reasoning on / --reasoning off instead.
+0.00.165.155 I srv  llama_server: initializing ...
+0.00.165.182 I cmn  common_param: common_params_print_info: verbosity = 3 (adjust with the `-lv N` CLI arg)
+0.00.165.787 W srv  llama_server: security: no API key is set and CORS allows all origins (see https://github.com/ggml-org/llama.cpp/pull/25655)
+0.00.167.888 I srv    load_model: loading model '/tmp/models/gemma-4-26B_q4_0-it.gguf'
+0.02.378.729 W load: control-looking token:    212 '</s>' was not control-type; this is probably a bug in the model. its type will be overridden
+0.02.379.619 W load: control-looking token:     50 '<|tool_response>' was not control-type; this is probably a bug in the model. its type will be overridden
+0.02.416.828 W load: '</s>' is a normal token here, removing it from EOG list
+0.06.188.377 W llama_kv_cache_iswa: using full-size SWA cache (ref: https://github.com/ggml-org/llama.cpp/pull/13194#issuecomment-2868343055)
+0.06.284.923 I cmn          init: llama threadpool init, n_threads = 2
+0.06.642.611 I srv    load_model: initializing, n_slots = 4, n_ctx_slot = 6144, kv_unified = 'false'
+0.06.653.767 I srv  llama_server: model loaded
+0.06.653.780 I srv  llama_server: listening on http://127.0.0.1:8099
+0.09.011.019 I slot get_availabl: id  3 | task -1 | selected slot by LRU, t_last = -1
+0.09.011.110 I slot launch_slot_: id  3 | task 0 | processing task, is_child = 0
+0.10.711.465 I slot print_timing: id  3 | task 0 | prompt eval time =     468.27 ms /   132 tokens (    3.55 ms per token,   281.89 tokens per second)
+0.10.711.476 I slot print_timing: id  3 | task 0 |        eval time =    1232.05 ms /    76 tokens (   16.43 ms per token,    60.87 tokens per second)
+0.10.711.477 I slot print_timing: id  3 | task 0 |       total time =    1700.32 ms /   208 tokens
+0.10.711.482 I slot print_timing: id  3 | task 0 |    graphs reused =         75
+0.10.711.578 I slot      release: id  3 | task 0 | stop processing: n_tokens = 207, truncated = 0
+0.10.718.533 I slot get_availabl: id  2 | task -1 | selected slot by LRU, t_last = -1
+0.10.718.640 I slot launch_slot_: id  2 | task 77 | processing task, is_child = 0
+0.12.511.895 I slot print_timing: id  2 | task 77 | prompt eval time =     230.56 ms /   134 tokens (    1.72 ms per token,   581.20 tokens per second)
+0.12.511.907 I slot print_timing: id  2 | task 77 |        eval time =    1517.32 ms /    97 tokens (   15.81 ms per token,    63.27 tokens per second)
+0.12.511.908 I slot print_timing: id  2 | task 77 |       total time =    1747.88 ms /   231 tokens
+0.12.511.909 I slot print_timing: id  2 | task 77 |    graphs reused =        170
+0.12.511.975 I slot      release: id  2 | task 77 | stop processing: n_tokens = 230, truncated = 0
+0.12.514.600 I srv    operator(): operator(): cleaning up before exit...
+Received second interrupt, terminating immediately.
+Received second interrupt, terminating immediately.
+Received second interrupt, terminating immediately.
+malloc(): unsorted double linked list corrupted

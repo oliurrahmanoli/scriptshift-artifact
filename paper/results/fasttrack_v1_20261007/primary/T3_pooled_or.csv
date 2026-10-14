@@ -1,0 +1,10 @@
+model_fit,contrast,cond_a,cond_b,log_or,se,or,or_lo,or_hi,p,notes,p_holm,holm_reject,pool_models,synthetic
+GEE_exchangeable,C1,bn_mt,bn_llm,0.18479967244189988,0.19002003312860313,1.2029774264573696,0.8289134000182576,1.7458454508445889,0.3307882832280491,,0.3307882832280491,False,"gpt-oss-20b,granite-4.2-8b,ministral-3-14b,qwen3.6-35b-a3b",False
+GEE_exchangeable,C2,banglish_translit,banglish_llm,,,,,,,condition missing,,,"gpt-oss-20b,granite-4.2-8b,ministral-3-14b,qwen3.6-35b-a3b",False
+GEE_exchangeable,C3,en,bn_llm,-2.283323706622307,0.264611333600721,0.10194480836304064,0.06069087507445957,0.1712406344351861,0.0,,0.0,True,"gpt-oss-20b,granite-4.2-8b,ministral-3-14b,qwen3.6-35b-a3b",False
+VB_GLMM_approx,C1,bn_mt,bn_llm,0.24821279584703015,0.261808598959797,1.2817326505613664,0.7672580771657053,2.141181222338909,0.3430939800856443,variational Bayes; mean-field SEs; glmer (glmm.R) is the registered fit,0.3430939800856443,False,"gpt-oss-20b,granite-4.2-8b,ministral-3-14b,qwen3.6-35b-a3b",False
+VB_GLMM_approx,C2,banglish_translit,banglish_llm,,,,,,,condition missing,,,"gpt-oss-20b,granite-4.2-8b,ministral-3-14b,qwen3.6-35b-a3b",False
+VB_GLMM_approx,C3,en,bn_llm,-3.7205417341488807,0.17996394033716023,0.024220843033146793,0.017021618655599594,0.034464950079430075,0.0,variational Bayes; mean-field SEs; glmer (glmm.R) is the registered fit,0.0,True,"gpt-oss-20b,granite-4.2-8b,ministral-3-14b,qwen3.6-35b-a3b",False
+GEE_exchangeable_incl_selfgen,C1,bn_mt,bn_llm,0.29365442301597344,0.1855551525689935,1.341320294143331,0.932362421122413,1.929657492324583,0.11351900769346002,,0.11351900769346002,False,"gemma-4-26b-a4b,gpt-oss-20b,granite-4.2-8b,ministral-3-14b,qwen3.6-35b-a3b",False
+GEE_exchangeable_incl_selfgen,C2,banglish_translit,banglish_llm,,,,,,,condition missing,,,"gemma-4-26b-a4b,gpt-oss-20b,granite-4.2-8b,ministral-3-14b,qwen3.6-35b-a3b",False
+GEE_exchangeable_incl_selfgen,C3,en,bn_llm,-2.1718975971815673,0.24273074565849867,0.11396115922648738,0.07081744865816234,0.1833890666540967,0.0,,0.0,True,"gemma-4-26b-a4b,gpt-oss-20b,granite-4.2-8b,ministral-3-14b,qwen3.6-35b-a3b",False

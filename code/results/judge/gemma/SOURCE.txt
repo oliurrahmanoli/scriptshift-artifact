@@ -1,0 +1,1 @@
+results.zip (Kaggle output download) sha256 4956fab5c5d28328511e49db5bede5e38d81bddca5d71fcb0c3384052fbbb280, 692,721 B, bangla-pi-judge-gemma v1, downloaded 2026-10-07 ~06:23 AEDT. judge_gemma.jsonl is placed at results/judge/ for the --judge glob; everything else under results/judge/gemma/.

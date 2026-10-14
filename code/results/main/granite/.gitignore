@@ -1,0 +1,3 @@
+# Large/derivable: unpacked traces (kept as granite_150_traces.zip) and the embedded harness copy (identical to repo at embed sha ee7b4195). Hashes in SHA256SUMS.txt.
+runs/traces/
+code/

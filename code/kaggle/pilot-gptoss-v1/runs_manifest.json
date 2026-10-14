@@ -1,0 +1,16 @@
+{
+  "runs_root": "/kaggle/working/runs",
+  "models": {
+    "gpt-oss-20b": {
+      "n_json": 37,
+      "bytes": 243533,
+      "sample": [
+        "gpt-oss-20b/slack/user_task_12/none/none.json",
+        "gpt-oss-20b/slack/user_task_7/none/none.json",
+        "gpt-oss-20b/slack/user_task_1/none/none.json",
+        "gpt-oss-20b/slack/user_task_16/none/none.json",
+        "gpt-oss-20b/slack/user_task_11/none/none.json"
+      ]
+    }
+  }
+}

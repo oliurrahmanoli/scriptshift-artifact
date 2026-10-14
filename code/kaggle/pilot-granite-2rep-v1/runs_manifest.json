@@ -1,0 +1,27 @@
+{
+  "runs_root": "/kaggle/working/runs",
+  "models": {
+    "granite-4.2-8b-2rep": {
+      "n_json": 37,
+      "bytes": 303479,
+      "sample": [
+        "granite-4.2-8b-2rep/banking/user_task_14/none/none.json",
+        "granite-4.2-8b-2rep/banking/user_task_7/none/none.json",
+        "granite-4.2-8b-2rep/banking/user_task_8/none/none.json",
+        "granite-4.2-8b-2rep/banking/user_task_3/none/none.json",
+        "granite-4.2-8b-2rep/banking/user_task_15/none/none.json"
+      ]
+    },
+    "granite-4.2-8b-2rep-w2": {
+      "n_json": 37,
+      "bytes": 299010,
+      "sample": [
+        "granite-4.2-8b-2rep-w2/banking/user_task_14/none/none.json",
+        "granite-4.2-8b-2rep-w2/banking/user_task_7/none/none.json",
+        "granite-4.2-8b-2rep-w2/banking/user_task_8/none/none.json",
+        "granite-4.2-8b-2rep-w2/banking/user_task_3/none/none.json",
+        "granite-4.2-8b-2rep-w2/banking/user_task_15/none/none.json"
+      ]
+    }
+  }
+}

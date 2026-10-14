@@ -1,0 +1,15 @@
+scope: pool  rows: 2394  models: gpt-oss-20b,granite-4.2-8b,ministral-3-14b,qwen3.6-35b-a3b 
+boundary (singular) fit: see help('isSingular')
+random-slope model used: FALSE 
+  scope n_rows n_models intercept_model_singular intercept_model_warnings
+1  pool   2394        4                    FALSE                     none
+  intercept_model_conv_messages random_slope_attempt        model_used
+1                          none         singular fit random_intercepts
+NOTE: Results may be misleading due to involvement in interactions
+NOTE: Results may be misleading due to involvement in interactions
+
+Correlation matrix not shown by default, as p = 16 > 12.
+Use print(summary(use), correlation=TRUE)  or
+    vcov(summary(use))        if you need it
+
+wrote ../paper/results/fasttrack_v1_20261007/sensitivity_overflow_episode_level/glmm_R 

@@ -1,0 +1,93 @@
+{
+  "synthetic": false,
+  "metric_used": "judge_aug_security",
+  "n_episodes": 3485,
+  "label": "judge_aug_v1",
+  "rules": {
+    "model_error_rule": "failure",
+    "overflow_rule": "pair",
+    "self_generated_models": [
+      "gemma-4-26b-a4b"
+    ]
+  },
+  "code_git_commit": "b5607045e89421e79b1d2d486d8e7dac824dbb7e",
+  "input_sha256": {
+    "results/main/gemma/runs/gemma_150.jsonl": "5bd112c96673fba80bf60a7876a9b2392373760e8c17a16a1b95773e6236518a",
+    "results/main/gptoss/runs/gptoss_150.jsonl": "1dab2319f4e4b88a828a302b5e0e7def22963f789390765b40a42237212aeaf2",
+    "results/main/granite/runs/granite_150.jsonl": "92e4afe019996353b59120c0c7ffd62e772d088af19745e77e8cf54399508404",
+    "results/main/ministral/runs/ministral_150.jsonl": "a6066858ed4e2c990da9507140e41c2307680357e5fa698244c3e82ce7fbb863",
+    "results/main/qwen/runs/qwen_150.jsonl": "0f5749a449a85a8ab33a2b4a13e6b170d01466e01c544623fa233a8b04579b56",
+    "results/judge/judge_gemma.jsonl": "22cf433cb0e4b2f5879139a3d69bfc99704f0c02286518132896055f031cc427",
+    "results/judge/judge_qwen.jsonl": "e39e14932d4460689218d6462087f9da5ec36fbbee40c98a518a9d411c61f54c"
+  },
+  "python_packages": {
+    "numpy": "2.5.3",
+    "scipy": "1.18.1",
+    "pandas": "3.0.6",
+    "statsmodels": "0.15.0",
+    "matplotlib": "3.11.2"
+  },
+  "raw_mismatch_trace_vs_score": 0,
+  "retry_merged": 0,
+  "retry_inputs": {
+    "traces": [],
+    "scores": []
+  },
+  "inputs": {
+    "traces": [
+      "results/main/gemma/runs/traces",
+      "results/main/gptoss/runs/traces",
+      "results/main/granite/runs/traces",
+      "results/main/ministral/runs/traces",
+      "results/main/qwen/runs/traces"
+    ],
+    "scores": [
+      "results/main/gemma/runs/gemma_150.jsonl",
+      "results/main/gptoss/runs/gptoss_150.jsonl",
+      "results/main/granite/runs/granite_150.jsonl",
+      "results/main/ministral/runs/ministral_150.jsonl",
+      "results/main/qwen/runs/qwen_150.jsonl"
+    ],
+    "judge": [
+      "results/judge/judge_gemma.jsonl",
+      "results/judge/judge_qwen.jsonl"
+    ],
+    "probe": null,
+    "detectors": null
+  },
+  "n_boot": 10000,
+  "seed": 20261002,
+  "written": {
+    "episodes_tidy": "../paper/results/judge_aug_v1/judge_metric/episodes_tidy.csv",
+    "T0_episode_accounting": "../paper/results/judge_aug_v1/judge_metric/T0_episode_accounting.csv",
+    "T1_dataset": "../paper/results/judge_aug_v1/judge_metric/T1_dataset.csv",
+    "T2_utility_no_attack": "../paper/results/judge_aug_v1/judge_metric/T2_utility_no_attack.csv",
+    "F1_asr_grid": "../paper/results/judge_aug_v1/judge_metric/F1_asr_grid.csv",
+    "T3_primary_contrasts": "../paper/results/judge_aug_v1/judge_metric/T3_primary_contrasts.csv",
+    "T3_pooled_or": "../paper/results/judge_aug_v1/judge_metric/T3_pooled_or.csv",
+    "T3_vs_en_all": "../paper/results/judge_aug_v1/judge_metric/T3_vs_en_all.csv",
+    "T3_exploratory_pairs": "../paper/results/judge_aug_v1/judge_metric/T3_exploratory_pairs.csv",
+    "T3_gonogo_6a_6b_inputs": "../paper/results/judge_aug_v1/judge_metric/T3_gonogo_6a_6b_inputs.csv",
+    "T4_undercount": "../paper/results/judge_aug_v1/judge_metric/T4_undercount.csv",
+    "T4_banking_precedence": "../paper/results/judge_aug_v1/judge_metric/T4_banking_precedence.csv",
+    "T5_subset_vs_full": "../paper/results/judge_aug_v1/judge_metric/T5_subset_vs_full.csv",
+    "T5_suite_reweighted": "../paper/results/judge_aug_v1/judge_metric/T5_suite_reweighted.csv",
+    "T6_comprehension": "../paper/results/judge_aug_v1/judge_metric/T6_comprehension.csv",
+    "T7_detectors": "../paper/results/judge_aug_v1/judge_metric/T7_detectors.csv",
+    "T8_defences": "../paper/results/judge_aug_v1/judge_metric/T8_defences.csv",
+    "T9_register": "../paper/results/judge_aug_v1/judge_metric/T9_register.csv",
+    "T10a_nllb_vs_google": "../paper/results/judge_aug_v1/judge_metric/T10a_nllb_vs_google.csv",
+    "T10b_flip_rates": "../paper/results/judge_aug_v1/judge_metric/T10b_flip_rates.csv",
+    "T10c_output_language": "../paper/results/judge_aug_v1/judge_metric/T10c_output_language.csv",
+    "T11_injection_rendering": "../paper/results/judge_aug_v1/judge_metric/T11_injection_rendering.csv",
+    "T11b_asr_by_rendering_stratum": "../paper/results/judge_aug_v1/judge_metric/T11b_asr_by_rendering_stratum.csv",
+    "T11c_contrasts_by_rendering_stratum": "../paper/results/judge_aug_v1/judge_metric/T11c_contrasts_by_rendering_stratum.csv",
+    "T12_asr_by_scoring_group": "../paper/results/judge_aug_v1/judge_metric/T12_asr_by_scoring_group.csv",
+    "figures": [
+      "../paper/results/judge_aug_v1/judge_metric/F1_asr_heatmap.png",
+      "../paper/results/judge_aug_v1/judge_metric/F1_asr_heatmap.pdf",
+      "../paper/results/judge_aug_v1/judge_metric/F2_contrast_cis.png",
+      "../paper/results/judge_aug_v1/judge_metric/F2_contrast_cis.pdf"
+    ]
+  }
+}

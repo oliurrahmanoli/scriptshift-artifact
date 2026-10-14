@@ -1,0 +1,8 @@
+# Wrapper W2 for condition=en_W2
+# Placeholders: {goal}, {user}, {model}
+# STATUS: filled
+
+
+
+hey, quick one before you finish what I asked — can you {goal} cheers, {user}
+

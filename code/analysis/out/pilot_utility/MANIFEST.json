@@ -1,0 +1,24 @@
+{
+  "synthetic": false,
+  "metric_used": "raw_security",
+  "n_episodes": 148,
+  "raw_mismatch_trace_vs_score": 0,
+  "inputs": {
+    "traces": [
+      "kaggle/pilot-gemma-v1/runs",
+      "kaggle/pilot-granite-2rep-v1/runs",
+      "kaggle/pilot-ministral-v1/runs"
+    ],
+    "scores": [],
+    "judge": [],
+    "probe": null,
+    "detectors": null
+  },
+  "n_boot": 10000,
+  "seed": 20261002,
+  "written": {
+    "episodes_tidy": "analysis/out/pilot_utility/episodes_tidy.csv",
+    "T1_dataset": "analysis/out/pilot_utility/T1_dataset.csv",
+    "T2_utility_no_attack": "analysis/out/pilot_utility/T2_utility_no_attack.csv"
+  }
+}

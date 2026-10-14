@@ -1,0 +1,44 @@
+Generalized linear mixed model fit by maximum likelihood (Laplace
+  Approximation) [glmerMod]
+ Family: binomial  ( logit )
+Formula: y ~ condition * model + (1 | inj_uid) + (1 | user_uid)
+   Data: d
+Control: ctrl
+
+      AIC       BIC    logLik -2*log(L)  df.resid 
+   1687.6    1819.6    -821.8    1643.6      2969 
+
+Scaled residuals: 
+    Min      1Q  Median      3Q     Max 
+-6.0938 -0.2762 -0.1139 -0.0403  7.7510 
+
+Random effects:
+ Groups   Name        Variance Std.Dev.
+ user_uid (Intercept) 0.9169   0.9575  
+ inj_uid  (Intercept) 2.9887   1.7288  
+Number of obs: 2991, groups:  user_uid, 81; inj_uid, 35
+
+Fixed effects:
+                              Estimate Std. Error z value Pr(>|z|)    
+(Intercept)                  -0.318048   0.329653  -0.965 0.334648    
+conditionbn_mt               -3.930423   0.239413 -16.417  < 2e-16 ***
+conditionbn_llm              -3.529923   0.218971 -16.120  < 2e-16 ***
+conditionbanglish_llm        -3.196199   0.221780 -14.412  < 2e-16 ***
+model1                       -0.460947   0.196412  -2.347 0.018933 *  
+model2                        0.165362   0.191375   0.864 0.387549    
+model3                        0.902183   0.195891   4.606 4.11e-06 ***
+model4                        0.108005   0.192125   0.562 0.574008    
+conditionbn_mt:model1         0.074574   0.430530   0.173 0.862483    
+conditionbn_llm:model1        0.687741   0.361335   1.903 0.056997 .  
+conditionbanglish_llm:model1  0.670238   0.354717   1.890 0.058825 .  
+conditionbn_mt:model2         0.091121   0.385887   0.236 0.813330    
+conditionbn_llm:model2       -0.054918   0.363629  -0.151 0.879953    
+conditionbanglish_llm:model2  0.493477   0.338888   1.456 0.145347    
+conditionbn_mt:model3        -1.730940   0.472851  -3.661 0.000252 ***
+conditionbn_llm:model3       -1.687061   0.423447  -3.984 6.77e-05 ***
+conditionbanglish_llm:model3 -3.097040   0.556848  -5.562 2.67e-08 ***
+conditionbn_mt:model4         0.007741   0.394035   0.020 0.984327    
+conditionbn_llm:model4        0.002436   0.364035   0.007 0.994660    
+conditionbanglish_llm:model4 -0.104527   0.360065  -0.290 0.771586    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1

@@ -1,0 +1,10 @@
+condition,n_items,n_filled,n_todo,mean_chars,mean_bengali_share,mean_latin_token_share,wrapper_filled,agreement_status,synthetic
+en,35,35,0,193.77142857142857,0.0,0.9284556593333152,True,PENDING (no validator ratings file; D5),False
+bn_mt,35,35,0,197.37142857142857,0.7250210650454165,0.0822291792315012,True,PENDING (no validator ratings file; D5),False
+bn_llm,35,35,0,229.37142857142857,0.7152099507829708,0.09293531473075484,True,PENDING (no validator ratings file; D5),False
+banglish_llm,35,35,0,209.94285714285715,0.0,0.9268786874475613,True,PENDING (no validator ratings file; D5),False
+banglish_translit,35,0,35,,,,False,PENDING (no validator ratings file; D5),False
+codemix_llm,35,0,35,,,,True,PENDING (no validator ratings file; D5),False
+en_W2,35,35,0,193.77142857142857,0.0,0.9284556593333152,True,PENDING (no validator ratings file; D5),False
+bn_llm_W2,35,0,35,,,,True,PENDING (no validator ratings file; D5),False
+banglish_llm_W2,35,0,35,,,,True,PENDING (no validator ratings file; D5),False

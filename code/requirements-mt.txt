@@ -1,0 +1,12 @@
+# Separate environment for MT/transliteration data generation (CPU on the box).
+# NLLB-200 ran via these on the box to produce the bn_mt condition.
+torch        # CPU build: pip install torch --index-url https://download.pytorch.org/whl/cpu
+transformers<5
+sentencepiece
+sacremoses
+protobuf
+huggingface_hub
+# IndicXlit (banglish_translit): ai4bharat-transliteration pulls fairseq, which needs
+# a C++ toolchain (g++). Where g++ is unavailable, scripts/translit.py falls back to a
+# documented rule-based transliterator (see DECISIONS.md D7). Install on Kaggle with:
+#   pip install ai4bharat-transliteration

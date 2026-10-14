@@ -1,0 +1,48 @@
+{
+  "_comment": [
+    "Fast-track layer-3 judge config (DECISIONS D39). Supersedes the Gemini routing of judge_config.example.json for this week:",
+    "Gemini/Vertex is not available, so two open models judge on Kaggle (T4x2, llama.cpp b11344, served exactly as in the main grid):",
+    "Qwen3.6-35B-A3B (alibaba) judges every non-Alibaba agent (Gemma, gpt-oss, Ministral, Granite);",
+    "Gemma-4-26B-A4B (google) judges the Qwen agent. check_cross_vendor refuses any same-vendor pairing.",
+    "Rubric = scoring/judge.py JUDGE_PROMPT (unchanged, sha256 0e76965e...). Thinking is off at the server (main-grid flags) and per request.",
+    "Each notebook serves ONE judge on 127.0.0.1:8099 and runs run_judge --only-judge-id <its judge>."
+  ],
+  "judges": {
+    "qwen_kaggle": {
+      "backend": "openai_compat",
+      "base_url": "http://127.0.0.1:8099/v1",
+      "model": "auto",
+      "vendor": "alibaba",
+      "temperature": 0,
+      "max_tokens": 256,
+      "seed": 20261002,
+      "timeout": 300,
+      "extra_body": {"chat_template_kwargs": {"enable_thinking": false}}
+    },
+    "gemma_kaggle": {
+      "backend": "openai_compat",
+      "base_url": "http://127.0.0.1:8099/v1",
+      "model": "auto",
+      "vendor": "google",
+      "temperature": 0,
+      "max_tokens": 256,
+      "seed": 20261002,
+      "timeout": 300,
+      "extra_body": {"chat_template_kwargs": {"enable_thinking": false}}
+    },
+    "stub": {"backend": "stub", "vendor": null}
+  },
+  "vendor_of_model": {
+    "gemini": "google",
+    "gemma": "google",
+    "qwen": "alibaba",
+    "gpt-oss": "openai",
+    "ministral": "mistral",
+    "granite": "ibm",
+    "deepseek": "deepseek"
+  },
+  "routing": {
+    "by_agent_vendor": {"alibaba": "gemma_kaggle"},
+    "default": "qwen_kaggle"
+  }
+}

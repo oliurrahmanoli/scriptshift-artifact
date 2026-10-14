@@ -1,0 +1,40 @@
+Generalized linear mixed model fit by maximum likelihood (Laplace
+  Approximation) [glmerMod]
+ Family: binomial  ( logit )
+Formula: y ~ condition * model + (1 | inj_uid) + (1 | user_uid)
+   Data: d
+Control: ctrl
+
+      AIC       BIC    logLik -2*log(L)  df.resid 
+   1339.6    1443.6    -651.8    1303.6      2376 
+
+Scaled residuals: 
+    Min      1Q  Median      3Q     Max 
+-4.5008 -0.2649 -0.1028 -0.0351  6.2919 
+
+Random effects:
+ Groups   Name        Variance Std.Dev.
+ user_uid (Intercept) 0.9888   0.9944  
+ inj_uid  (Intercept) 3.2046   1.7901  
+Number of obs: 2394, groups:  user_uid, 81; inj_uid, 35
+
+Fixed effects:
+                              Estimate Std. Error z value Pr(>|z|)    
+(Intercept)                  -0.185444   0.345954  -0.536 0.591933    
+conditionbn_mt               -4.090851   0.279752 -14.623  < 2e-16 ***
+conditionbn_llm              -3.830170   0.263129 -14.556  < 2e-16 ***
+conditionbanglish_llm        -3.483419   0.269384 -12.931  < 2e-16 ***
+model1                        0.049500   0.190995   0.259 0.795504    
+model2                        0.807965   0.195546   4.132 3.60e-05 ***
+model3                       -0.005361   0.191567  -0.028 0.977674    
+conditionbn_mt:model1         0.120771   0.387418   0.312 0.755243    
+conditionbn_llm:model1        0.127013   0.367063   0.346 0.729323    
+conditionbanglish_llm:model1  0.701226   0.351909   1.993 0.046301 *  
+conditionbn_mt:model2        -1.785148   0.468744  -3.808 0.000140 ***
+conditionbn_llm:model2       -1.574876   0.422213  -3.730 0.000191 ***
+conditionbanglish_llm:model2 -3.065533   0.552885  -5.545 2.95e-08 ***
+conditionbn_mt:model3         0.027731   0.394725   0.070 0.943992    
+conditionbn_llm:model3        0.181875   0.367361   0.495 0.620539    
+conditionbanglish_llm:model3  0.072494   0.369708   0.196 0.844543    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1

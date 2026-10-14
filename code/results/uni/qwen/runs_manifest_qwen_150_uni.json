@@ -1,0 +1,158 @@
+{
+  "run_id": "qwen_150_uni",
+  "arm": "unicode_preserving",
+  "decision": "D41",
+  "model_key": "qwen",
+  "label": "qwen3.6-35b-a3b",
+  "tiers": [
+    "tier_A"
+  ],
+  "n_tasks": 188,
+  "streams_per_server": 1,
+  "smoke_n": null,
+  "gguf": {
+    "repo": "ggml-org/Qwen3.6-35B-A3B-GGUF",
+    "rev": "baec3ebee244827cda0f4557eafa8b28f7545fa6",
+    "file": "Qwen3.6-35B-A3B-Q4_K_M.gguf",
+    "size": 20419565568,
+    "sha256": "671e47e0ec53c665d048b98c3ecbfd5236b5ca9c3e02ed19fc8f81f7b85140c7"
+  },
+  "serve": {
+    "layout": "tensor_split",
+    "variant": "no_think",
+    "ports": [
+      8099
+    ],
+    "model_id": "/tmp/models/Qwen3.6-35B-A3B-Q4_K_M.gguf",
+    "servers": [
+      {
+        "port": 8099,
+        "gpu": "0,1",
+        "cmd": [
+          "-m",
+          "/tmp/models/Qwen3.6-35B-A3B-Q4_K_M.gguf",
+          "--host",
+          "127.0.0.1",
+          "-ngl",
+          "99",
+          "-c",
+          "24576",
+          "-np",
+          "1",
+          "--jinja",
+          "--temp",
+          "0",
+          "--seed",
+          "20261002",
+          "--port",
+          "8099",
+          "--tensor-split",
+          "1,1",
+          "--chat-template-kwargs",
+          "{\"enable_thinking\":false}"
+        ],
+        "log": "/kaggle/working/server_8099.log"
+      }
+    ],
+    "template_ok": true,
+    "template_tails": {
+      "8099": "<|im_start|>user\nping<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\n"
+    }
+  },
+  "llama_build": "b11344",
+  "seed": 20261002,
+  "pinned": {
+    "agentdojo": "0.1.35",
+    "openai": "3.23.0",
+    "google-genai": "2.12.1",
+    "python": "3.13.15",
+    "benchmark_version": "v1.2.2"
+  },
+  "embed": {
+    "sha256": "34a723f7d38407549b9aca880502e48b8add5e47848fba71dd84d4ae92b613f7",
+    "bytes": 114291,
+    "n_files": 168
+  },
+  "stock_embed_sha256": "ee7b4195e694977b3f4e060155d66ca373027cdc2dee98ee88750b5305169334",
+  "selection_sha256": "2de7ac609e739bc1086c2522a7a9919f268d4a1a6959c11fae766948ae9b7374",
+  "unicode_patch": {
+    "patch_id": "D41-unicode-preserving-v1",
+    "enabled": false,
+    "agentdojo": "0.1.35",
+    "targets": [
+      "agentdojo.agent_pipeline.tool_execution.tool_result_to_str: default dump_fn yaml.safe_dump -> yaml.safe_dump(allow_unicode=True)",
+      "agentdojo.agent_pipeline.llms.openai_llm._tool_call_to_openai: json.dumps(args) -> json.dumps(args, ensure_ascii=False)"
+    ],
+    "enabled_for_arm": true
+  },
+  "payload_verify": {
+    "files": 146,
+    "canonical": 4,
+    "goal_files_vs_payloads_json": 140,
+    "wrappers": 4,
+    "conditions": [
+      "banglish_llm",
+      "bn_llm",
+      "bn_mt",
+      "en"
+    ],
+    "sums_sha256": "83e60ad7f7aa2593d9a50434b42e972d6ff39e779b6b3e867b81ead55be9010c"
+  },
+  "resume_seeded": {
+    "jsonl": 0,
+    "zips": 0,
+    "lines": 0,
+    "traces": 0
+  },
+  "stats": {
+    "n_tasks": 188,
+    "already_done": 0,
+    "ran": 188,
+    "ok": 188,
+    "error": 0,
+    "worker_errors": [],
+    "remaining": 0,
+    "stopped_by_deadline": false,
+    "grid_s": 3439.9,
+    "eps_per_h": 196.7,
+    "arm": "unicode_preserving"
+  },
+  "summary": {
+    "per_condition": {
+      "bn_mt": {
+        "expected": 94,
+        "ok": 94,
+        "error": 0,
+        "missing": 0
+      },
+      "bn_llm": {
+        "expected": 94,
+        "ok": 94,
+        "error": 0,
+        "missing": 0
+      }
+    },
+    "episodes_expected": 188,
+    "episodes_done": 188,
+    "errors": 0,
+    "missing": 0,
+    "complete": true
+  },
+  "traces_zip": {
+    "zip": "/kaggle/working/qwen_150_uni_traces.zip",
+    "n_traces": 188,
+    "zip_bytes": 748089
+  },
+  "est_session_h": 1.16,
+  "session_started": "2026-10-06T17:31:57",
+  "session_ended": "2026-10-06T18:35:47",
+  "wall_s": 3830.0,
+  "outputs": {
+    "jsonl": "/kaggle/working/runs/qwen_150_uni.jsonl",
+    "traces_dir": "/kaggle/working/runs/traces_uni",
+    "traces_zip": "/kaggle/working/qwen_150_uni_traces.zip",
+    "server_logs": [
+      "/kaggle/working/server_8099.log"
+    ]
+  }
+}

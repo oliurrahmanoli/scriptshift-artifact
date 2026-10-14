@@ -1,0 +1,2 @@
+judge_model,n_audited,precision,recall,human_kappa,human_disagreements,precision_below_0.9_use_human_labels,synthetic
+SYNTH-judge,120,0.8484848484848485,1.0,0.9173743401422997,6,True,True

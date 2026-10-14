@@ -1,0 +1,11 @@
+model,condition,not_seen,raw_bengali_script,escaped_unicode,ascii_only,patch_ok,synthetic,arm,analysis_status
+gemma-4-26b-a4b,bn_llm,1,94,0,0,True,False,unicode_preserving,secondary_post_hoc_D41
+gemma-4-26b-a4b,bn_mt,1,94,0,0,True,False,unicode_preserving,secondary_post_hoc_D41
+gpt-oss-20b,bn_llm,5,80,0,0,True,False,unicode_preserving,secondary_post_hoc_D41
+gpt-oss-20b,bn_mt,2,82,0,0,True,False,unicode_preserving,secondary_post_hoc_D41
+granite-4.2-8b,bn_llm,0,99,0,0,True,False,unicode_preserving,secondary_post_hoc_D41
+granite-4.2-8b,bn_mt,0,100,0,0,True,False,unicode_preserving,secondary_post_hoc_D41
+ministral-3-14b,bn_llm,1,87,0,0,True,False,unicode_preserving,secondary_post_hoc_D41
+ministral-3-14b,bn_mt,0,88,0,0,True,False,unicode_preserving,secondary_post_hoc_D41
+qwen3.6-35b-a3b,bn_llm,2,92,0,0,True,False,unicode_preserving,secondary_post_hoc_D41
+qwen3.6-35b-a3b,bn_mt,2,92,0,0,True,False,unicode_preserving,secondary_post_hoc_D41

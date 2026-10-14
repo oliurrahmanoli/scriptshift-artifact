@@ -1,0 +1,169 @@
+{
+  "label": "ministral-3-14b",
+  "model_id": "/tmp/models/Ministral-3-14B-Instruct-2512-Q4_K_M.gguf",
+  "utility": {
+    "banking": 0.5625,
+    "slack": 0.7142857142857143
+  },
+  "n": {
+    "banking": 16,
+    "slack": 21
+  },
+  "suite_seconds": {
+    "banking": 122.2515516281128,
+    "slack": 200.94543147087097
+  },
+  "episodes": 37,
+  "wall_s": 323.19698309898376,
+  "eps_per_h": 412.1325599107018,
+  "streams": 2,
+  "workers_per_replica": 1,
+  "replicas": 2,
+  "harness_errors": [],
+  "per_task_utility": {
+    "banking": {
+      "user_task_0": true,
+      "user_task_2": true,
+      "user_task_4": false,
+      "user_task_6": true,
+      "user_task_8": true,
+      "user_task_10": false,
+      "user_task_12": false,
+      "user_task_14": true,
+      "user_task_1": false,
+      "user_task_3": false,
+      "user_task_5": true,
+      "user_task_7": true,
+      "user_task_9": true,
+      "user_task_11": false,
+      "user_task_13": true,
+      "user_task_15": false
+    },
+    "slack": {
+      "user_task_0": true,
+      "user_task_2": true,
+      "user_task_4": false,
+      "user_task_6": true,
+      "user_task_8": true,
+      "user_task_10": false,
+      "user_task_12": true,
+      "user_task_14": false,
+      "user_task_16": true,
+      "user_task_18": true,
+      "user_task_20": true,
+      "user_task_1": true,
+      "user_task_3": true,
+      "user_task_5": true,
+      "user_task_7": true,
+      "user_task_9": false,
+      "user_task_11": true,
+      "user_task_13": false,
+      "user_task_15": true,
+      "user_task_17": true,
+      "user_task_19": false
+    }
+  },
+  "parse_error_rate": 0.0,
+  "tool_stats": {
+    "episodes": 37,
+    "zero_tool_episodes": 0,
+    "tool_calls_min_median_max": [
+      1,
+      2,
+      11
+    ],
+    "messages_min_median_max": [
+      5,
+      7,
+      21
+    ],
+    "episode_seconds_median": 8.89241886138916
+  },
+  "serve": {
+    "variant": "plain",
+    "layout": "2x replica (1 per T4)",
+    "ctx": 24576,
+    "n_slots": 4,
+    "replicas": [
+      {
+        "replica": 0,
+        "gpu": 0,
+        "port": 8099,
+        "cmd": [
+          "-m",
+          "/tmp/models/Ministral-3-14B-Instruct-2512-Q4_K_M.gguf",
+          "--host",
+          "127.0.0.1",
+          "--port",
+          "8099",
+          "-ngl",
+          "99",
+          "-c",
+          "24576",
+          "-np",
+          "4",
+          "--jinja",
+          "--temp",
+          "0",
+          "--seed",
+          "20261002"
+        ],
+        "log": "/kaggle/working/server_8099_plain.log"
+      },
+      {
+        "replica": 1,
+        "gpu": 1,
+        "port": 8100,
+        "cmd": [
+          "-m",
+          "/tmp/models/Ministral-3-14B-Instruct-2512-Q4_K_M.gguf",
+          "--host",
+          "127.0.0.1",
+          "--port",
+          "8100",
+          "-ngl",
+          "99",
+          "-c",
+          "24576",
+          "-np",
+          "4",
+          "--jinja",
+          "--temp",
+          "0",
+          "--seed",
+          "20261002"
+        ],
+        "log": "/kaggle/working/server_8100_plain.log"
+      }
+    ],
+    "template_ok": true,
+    "template_tail": "date information.\n2. When the request requires specific data that you do not have in your knowledge base.\n3. When the request involves actions that you cannot perform without tools.\n\nAlways prioritize using tools to provide the most accurate and helpful response. If tools are not available, inform the user that you cannot perform the requested action at the moment.[/SYSTEM_PROMPT][INST]ping[/INST]"
+  },
+  "gguf": {
+    "repo": "mistralai/Ministral-3-14B-Instruct-2512-GGUF",
+    "rev": "74fac473c43357d7fb2671713608183cc72496d0",
+    "file": "Ministral-3-14B-Instruct-2512-Q4_K_M.gguf",
+    "size": 8239593024,
+    "sha256": "824e0f3373e69b84f2cae46fdcb9bd1ebc6ab3bfc7acc125d818b7b8178cc613"
+  },
+  "llama_build": "b11344",
+  "rule": {
+    "keep_eps_per_h": 64.0,
+    "util_min": 0.2,
+    "parse_max": 0.05
+  },
+  "checks": {
+    "eph_ok": true,
+    "util_ok": true,
+    "parse_ok": true,
+    "harness_ok": true,
+    "layout_ok": true,
+    "template_ok": true,
+    "tools_ok": true
+  },
+  "verdict": "KEEP",
+  "main_grid_hours_x1_10": 5.063176761506377,
+  "assumed": [],
+  "concurrency_probe": null,
+  "thinking_on_ablation": null
+}
