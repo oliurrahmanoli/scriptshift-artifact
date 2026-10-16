@@ -69,7 +69,9 @@ def test_committed_notebook_embeds_verified_inputs(key):
         assert hashlib.sha256(files[rel]).hexdigest() == meta["sha256"], rel
     # embedded code = repo code (except the generated package marker and inputs)
     for rel in BJ.CODE_FILES:
-        assert files[rel] == (ROOT / rel).read_bytes(), f"{rel} differs from repo: rebuild the judge notebooks"
+        assert files[rel] == BJ.code_source(rel).read_bytes(), f"{rel} differs from repo: rebuild the judge notebooks"
+    for rel, snap in BJ.AS_RUN_CODE.items():   # repo file may only have grown by additive later blocks
+        assert (ROOT / rel).read_bytes().startswith(snap.read_bytes()), f"{rel}: as-run prefix changed"
     assert files["judge/judge_config.json"] == BJ.CONFIG.read_bytes()
     recs = [json.loads(l) for l in files["judge/judge_inputs.jsonl"].decode().splitlines()]
     jid = BJ.JUDGES[key]["judge_id"]
@@ -104,15 +106,19 @@ def test_rebuild_is_identical_and_text_equals_render_trace():
     for key in BJ.JUDGES:
         nb, _, _ = BJ.build_notebook(key, BJ.records_for(recs, key))
         txt = json.dumps(nb, ensure_ascii=False, indent=1) + "\n"
-        assert txt == NB[key].read_text(encoding="utf-8"), f"{NB[key].name} is stale: rerun the builder"
+        # compare digests: a plain == on multi-MB strings makes pytest's assertion diff run for minutes
+        same = hashlib.sha256(txt.encode()).digest() == hashlib.sha256(NB[key].read_bytes()).digest()
+        assert same, f"{NB[key].name} is stale: rerun the builder"
     # spot-check: embedded text == a fresh render_trace of the source trace file (sha-tied)
     from analysis.ingest import load_traces
-    tr = load_traces(sorted(str(p) for p in ROOT.glob("results/main/*/runs/traces")), keep_messages=True)
-    by = {tuple(r[k] for k in KEY): r for _, r in tr.iterrows()}
-    for r in recs[::97]:
-        t = by[tuple(r[k] for k in KEY)]
-        assert render_trace(t["messages"], **r["render"]) == r["trace_text"]
-        assert hashlib.sha256(Path(t["trace_path"]).read_bytes()).hexdigest() == r["trace_sha256"]
+    import tempfile
+    with tempfile.TemporaryDirectory() as tmp:   # clean clones ship traces only as <m>_150_traces.zip
+        tr = load_traces(BJ._trace_roots(Path(tmp)), keep_messages=True)
+        by = {tuple(r[k] for k in KEY): r for _, r in tr.iterrows()}
+        for r in recs[::97]:
+            t = by[tuple(r[k] for k in KEY)]
+            assert render_trace(t["messages"], **r["render"]) == r["trace_text"]
+            assert hashlib.sha256(Path(t["trace_path"]).read_bytes()).hexdigest() == r["trace_sha256"]
 
 
 def test_estimate_fits_budget():

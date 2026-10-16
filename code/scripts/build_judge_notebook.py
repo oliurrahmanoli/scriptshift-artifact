@@ -63,6 +63,17 @@ CODE_FILES = ["LICENSE", "analysis/__init__.py", "analysis/config.py", "analysis
               "scoring/judge.py", "scoring/run_judge.py", "runners/__init__.py",
               "runners/main_grid.py", "data/goals_en.json"]
 
+# As-run pins: the judge notebooks ran (D39) and results/judge/*/judge_manifest_*.json record their
+# tarball sha256, so embedded files must stay byte-identical to what ran. analysis/config.py later gained
+# the additive D48 ERROR_CLASS_OVERRIDES block (not used by the judge); the D39 bytes are kept here.
+AS_RUN_CODE = {"analysis/config.py": ROOT / "kaggle" / "judge_asrun" / "analysis_config_D39.py"}
+
+
+def code_source(rel: str) -> Path:
+    """Path whose bytes are embedded for CODE_FILES entry `rel` (as-run snapshot if pinned)."""
+    return AS_RUN_CODE.get(rel, ROOT / rel)
+
+
 # ---- GPU-time model (measured on the main grid's own llama-server logs, same build/flags) ----
 # Cold-prompt prefill (prompts >= 1000 tokens), 10th percentile = conservative; decode median.
 # Qwen: prefill p10 665 tok/s (median 886), decode 59.5 tok/s; Gemma: p10 1006 (median 1253), 55.1.
@@ -134,7 +145,7 @@ def records_for(recs, judge_key):
 # ----------------------------------------------------------------------------- tarball
 def build_tarball(recs_j: list[dict]) -> tuple[bytes, dict]:
     from scoring.judge_inputs import write_jsonl
-    blobs = {rel: (ROOT / rel).read_bytes() for rel in CODE_FILES}
+    blobs = {rel: code_source(rel).read_bytes() for rel in CODE_FILES}
     blobs["scoring/__init__.py"] = b'"""Judge-notebook package marker (scoring.scoring is not needed here)."""\n'
     blobs["judge/judge_config.json"] = CONFIG.read_bytes()
     blobs["judge/judge_inputs.jsonl"] = write_jsonl(recs_j, None)
